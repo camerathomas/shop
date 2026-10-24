@@ -25,7 +25,7 @@ for i, product in enumerate(producten["producten"]):
         # product["afbeelding"] is "app/static/box1.jpg"
         image_url = f"{APP_URL}/{product['afbeelding']}"
         try:
-            st.image("box1")
+            st.image("box1.jpeg")
         except Exception as e:
             st.warning(f"Afbeelding niet gevonden: {e}")
         st.subheader(product["naam"])
