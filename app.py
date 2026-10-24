@@ -55,7 +55,7 @@ with tab_winkel:
 
             # ✅ HIER: key voor "In winkelwagentje stoppen"
             if st.button("In winkelwagentje stoppen", key=f"wagen_{product['id']}"):
-                st.warning("De winkelwagentjes zijn helaas allemaal in gebruik. Mag het ook een winkelmandje zijn?")
+                st.warning("De winkelwagentjes zijn helaas allemaal in gebruik.")
                 
                 # ✅ HIER: key voor de radio
                 keuze_mandje = st.radio(
