@@ -16,7 +16,7 @@ st.markdown("---")
 
 # HARDCODEER HIER DE URL VAN JOUW APP
 # Vervang dit door de echte URL die je in je browser ziet
-APP_URL = "https://jouwappnaam.streamlit.app"  # <-- PAS DIT AAN
+APP_URL = "https://shopshop.streamlit.app"  # <-- PAS DIT AAN
 
 cols = st.columns(3)
 
@@ -25,7 +25,7 @@ for i, product in enumerate(producten["producten"]):
         # product["afbeelding"] is "app/static/box1.jpg"
         image_url = f"{APP_URL}/{product['afbeelding']}"
         try:
-            st.image(""box1")
+            st.image("box1")
         except Exception as e:
             st.warning(f"Afbeelding niet gevonden: {e}")
         st.subheader(product["naam"])
