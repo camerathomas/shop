@@ -266,6 +266,23 @@ with tab_afrekenen:
             st.success("Gefeliciteerd! U hebt afgerekend. Hier zijn de consequenties van uw keuzes:")
             for c in consequenties:
                 st.info(c)
+# ============================================================
+# TAB: MIJN WINKELWAGEN / BESTELLINGEN
+# ============================================================
+with tab_bestellingen:
+    st.header("📦 Mijn winkelwagen/mandje/mandje op wieletjes")
+
+    if not st.session_state.bestellingen:
+        st.info("U hebt nog niets besteld. En dat is precies de bedoeling.")
+    else:
+        for i, bestelling in enumerate(st.session_state.bestellingen):
+            with st.expander(f"Bestelling #{i+1} — {bestelling['status']}"):
+                st.write(f"**Producten:** {', '.join(bestelling['producten'])}")
+                st.write(f"**Totaal:** €{bestelling['totaal']:.2f}")
+                st.write(f"**Status:** {bestelling['status']}")
+                st.write("**Consequenties:**")
+                for c in bestelling["consequenties"]:
+                    st.write(f"- {c}")
 
 # ============================================================
 # TAB 2: OVER ONS
