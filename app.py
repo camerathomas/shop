@@ -294,6 +294,9 @@ with tab_over:
 # ============================================================
 # TAB 3: INNOVATIE
 # ============================================================
+# ============================================================
+# TAB 3: INNOVATIE
+# ============================================================
 with tab_innovatie:
     st.header("💡 Innovatie")
     st.write("""
@@ -313,6 +316,19 @@ with tab_innovatie:
     st.write("- Aantal producten geleverd: **0**")
     st.write("- Aantal klachten: **0** (want er is niets om over te klagen)")
     st.write("- Tevredenheid: **100%** (van 0 klanten)")
+
+    st.markdown("---")
+
+    st.subheader("🚀 Toekomstplannen: Het Mondiale Buizensysteem")
+    st.write("""
+    Momenteel richten wij al onze aandacht op het verbeteren van de service, en het leveren van bestellingen zonder daarvoor chauffeurs en bijbehorende voertuigen in te zetten.
+
+    We leggen nu een mondiaal netwerk aan van een buissysteem, waarbij elk huis zal worden aangesloten. Het pakketdienstprincipe gebruikt geen energie, maar maakt gebruik van de draaiing van de aarde om haar as. Deze draait aan het aardoppervlak en vlak daaronder ongeveer 200 kilometer per seconde, en in de buis is een ontmagnetiseerd vacuüm, waardoor het product blijft stilstaan, terwijl het in feite zoef—in een seconde 200 kilometer verder is door het intelligente buizensysteem, wat uitkomt bij uw brievenbus.
+
+    Wanneer we de gehele globe hebben omspannen, is onze roll-out compleet en zult u daarvan bericht krijgen, zodat uw bestelling nog accurater niet wordt geleverd, maar de echte aandacht wordt gegeven die het verdient.
+    """)
+
+    st.info("Let op: dit buizensysteem is nog in ontwikkeling. De verwachte opleverdatum is het jaar 3000. Tot die tijd blijven wij uw bestellingen op de oude, vertrouwde manier niet leveren.")
 
 # ============================================================
 # TAB 4: VACATURES
