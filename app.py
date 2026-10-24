@@ -171,108 +171,83 @@ with tab_afrekenen:
         st.write("Uw winkelwagen:")
         for i, item in enumerate(st.session_state.winkelwagen):
             st.write(f"**{item['product']}** — {item['prijs']}")
-            st.write(f"  Keuzes: {item['keuzes']}")
 
         st.markdown("---")
 
         if st.button("Afrekenen", type="primary"):
-            # Verzamel alle absurde consequenties
-            consequenties = []
+            verhalen = []
 
             for item in st.session_state.winkelwagen:
                 keuzes = item["keuzes"]
+                verhaal = []
+
+                # Type
+                if keuzes.get("type") == "Met uitklaphengsel en wieletjes":
+                    verhaal.append("U koos voor een uniek uitklaphengsel met vier degelijke, onverwoestbare wieletjes.")
+                elif keuzes.get("type") == "Zelf dragen":
+                    verhaal.append("U koos voor zelf dragen—dapper, want er is niets om te dragen.")
 
                 # Kleur
-                if keuzes.get("kleur") == "Groen":
-                    consequenties.append(
-                        "U heeft gekozen voor een groen winkelmandje. Echter, wij sturen u alleen een neon gele onklapbare winkelwagen toe als brievenbuspakketje. "
-                        "Dat stond in de kleine lettertjes, maar we geven toe dat ze wel heel erg klein waren."
-                    )
-                elif keuzes.get("kleur") == "Blauw":
-                    consequenties.append(
-                        "U heeft gekozen voor een blauw winkelmandje. Helaas hebben wij alleen neon gele winkelwagens. "
-                        "Wij hebben besloten uw blauwe keuze te negeren, omdat blauw toch niet zo opvalt in het verkeer."
-                    )
+                if keuzes.get("kleur") == "Blauw":
+                    verhaal.append("U koos voor blauw, een rustige kleur die helaas niet op voorraad is.")
+                elif keuzes.get("kleur") == "Groen":
+                    verhaal.append("U koos voor groen, een milieuvriendelijke kleur die wij niet hebben.")
                 elif keuzes.get("kleur") == "Rood":
-                    consequenties.append(
-                        "U heeft gekozen voor een rood winkelmandje. Rood is de kleur van gevaar, dus wij hebben besloten uw keuze niet te honoreren. "
-                        "U krijgt een neon gele winkelwagen, want die valt tenminste op."
-                    )
-
-                # Rijbewijs en openbare weg
-                if keuzes.get("rijbewijs") == "Nee" and keuzes.get("openbare_weg") == "Ja":
-                    consequenties.append(
-                        "Uit uw overige keuzes blijkt echter dat u geen rijbewijs heeft, maar u wilt er wel mee de openbare weg op. "
-                        "Voor uw en onze veiligheid zullen we daarom een extra lange levertijd in acht nemen, bovenop de garantie dat u al in het derde millennium van onze jaartelling uw product tegemoet mag zien."
-                    )
-                elif keuzes.get("rijbewijs") == "Nee":
-                    consequenties.append(
-                        "U heeft geen rijbewijs W(inkelwagen). Dat is geen probleem, want wij hebben ook geen winkelwagens. "
-                        "Maar voor de vorm zullen we uw bestelling toch iets langer vasthouden."
-                    )
-                elif keuzes.get("rijbewijs") == "Ja":
-                    consequenties.append(
-                        "U heeft een rijbewijs W(inkelwagen). Gefeliciteerd! Helaas is dat rijbewijs niet geldig voor onze winkelwagens, "
-                        "want die bestaan niet. Wij zullen uw rijbewijs dan ook niet controleren."
-                    )
+                    verhaal.append("U koos voor rood, de kleur van gevaar. Wij hebben besloten uw keuze te negeren.")
 
                 # Materiaal
-                if keuzes.get("materiaal") == "Tweedehands WC-papier (klimaatvriendelijk)":
-                    consequenties.append(
-                        "U heeft gekozen voor tweedehands WC-papier (klimaatvriendelijk). Dat is een uitstekende keuze, "
-                        "maar helaas hebben wij dat materiaal niet. Wij hebben niets. U krijgt dus niets, maar dan klimaatvriendelijk."
-                    )
-                elif keuzes.get("materiaal") == "Gietbeton":
-                    consequenties.append(
-                        "U heeft gekozen voor gietbeton. Dat is een zwaar materiaal. Wij zullen uw bestelling daarom extra voorzichtig niet behandelen."
-                    )
+                if keuzes.get("materiaal") == "Gietbeton":
+                    verhaal.append("Wij zullen eerst een mal timmeren om dit gevaarte in gietbeton te kunnen vervaardigen.")
+                elif keuzes.get("materiaal") == "Tweedehands WC-papier (klimaatvriendelijk)":
+                    verhaal.append("U koos voor tweedehands WC-papier, klimaatvriendelijk en bijzonder moeilijk te vinden. Wij hebben het dan ook niet.")
                 elif keuzes.get("materiaal") == "Steen":
-                    consequenties.append(
-                        "U heeft gekozen voor steen. Wij hebben geen steen. Wij hebben niets. Maar wij zullen uw keuze respecteren door u niets van steen te sturen."
-                    )
+                    verhaal.append("U koos voor steen. Wij hebben geen steen. Wij hebben niets.")
+                elif keuzes.get("materiaal") == "Hout":
+                    verhaal.append("U koos voor hout. Wij hebben geen hout, maar wij zullen uw keuze respecteren door u niets van hout te sturen.")
+                elif keuzes.get("materiaal") == "Plastic":
+                    verhaal.append("U koos voor plastic. Dat is slecht voor het milieu, dus wij sturen u niets. Dat is beter voor het milieu.")
+                elif keuzes.get("materiaal") == "IJzer":
+                    verhaal.append("U koos voor ijzer. Wij hebben geen ijzer, maar wij zullen uw bestelling extra stevig niet verpakken.")
 
                 # Inpakken
-                if keuzes.get("inpakken") == "Ja":
-                    consequenties.append(
-                        "U heeft gekozen voor inpakken als kadootje. Wij zullen uw niets zorgvuldig inpakken in niets, "
-                        "voorzien van een nietszeggend label, en het vervolgens niet verzenden."
-                    )
-                elif keuzes.get("inpakken") == "Nee":
-                    consequenties.append(
-                        "U heeft gekozen voor niet inpakken. Dat scheelt ons weer een hoop werk, want er valt niets in te pakken."
-                    )
+                if keuzes.get("inpakken") == "Nee":
+                    verhaal.append("Het scheelt enorm dat we het niet in hoeven te pakken.")
+                elif keuzes.get("inpakken") == "Ja":
+                    verhaal.append("Wij zullen uw niets zorgvuldig inpakken in niets, voorzien van een nietszeggend label.")
 
-                # Type mandje
-                if keuzes.get("type") == "Met uitklaphengsel en wieletjes":
-                    consequenties.append(
-                        "U heeft gekozen voor een model met uitklaphengsel en wieletjes. Helaas zijn de wieletjes op, "
-                        "dus u krijgt een model zonder wieletjes. Maar met een uitklaphengsel. Dat dan weer wel."
-                    )
-                elif keuzes.get("type") == "Zelf dragen":
-                    consequenties.append(
-                        "U heeft gekozen voor zelf dragen. Dat is dapper, want er is niets om te dragen. "
-                        "Wij zullen uw moed belonen met een extra lange levertijd."
-                    )
+                # Openbare weg
+                if keuzes.get("openbare_weg") == "Ja":
+                    verhaal.append("Omdat u er de openbare weg mee op wilt, zullen we een extra lange levertermijn in acht nemen, om de veiligheid van u en uw omgeving te waarborgen.")
 
-            # Voeg een algemene afsluiting toe
-            consequenties.append(
-                "Wij hebben uw betaling ontvangen. Uw bestelling is geplaatst. Uw levering is gepland voor het jaar 3000. "
-                "Wij wensen u veel geduld."
-            )
+                # Rijbewijs
+                if keuzes.get("rijbewijs") == "Nee":
+                    verhaal.append("Dat u geen rijbewijs heeft, doet niet ter zake.")
+                elif keuzes.get("rijbewijs") == "Ja":
+                    verhaal.append("Uw rijbewijs is helaas niet geldig voor onze winkelwagens, want die bestaan niet.")
+
+                # Algemene afsluiting
+                verhaal.append(
+                    "Op dit moment hebben wij echter alleen neongele opvouwbare winkelwagens van gerecycled WC-papier, "
+                    "vooral om de stikstofcrisis niet negatief te beïnvloeden. In dat kader zullen we daarom uw bestelling "
+                    "persoonlijk naar u toe komen duwen, en dat kan even duren, want de fabrikant zit op een van de 17.000 eilanden in Indonesië, "
+                    "en wij weten nog niet welke."
+                )
+
+                verhalen.append(" ".join(verhaal))
 
             # Sla de bestelling op
             st.session_state.bestellingen.append({
                 "producten": [item["product"] for item in st.session_state.winkelwagen],
                 "totaal": sum(float(item["prijs"].replace("€", "").replace(",", ".").replace("/maand", "")) for item in st.session_state.winkelwagen),
                 "status": "Niet verzonden",
-                "consequenties": consequenties
+                "verhalen": verhalen
             })
             st.session_state.winkelwagen = []
 
-            # Toon alle consequenties
-            st.success("Gefeliciteerd! U hebt afgerekend. Hier zijn de consequenties van uw keuzes:")
-            for c in consequenties:
-                st.info(c)
+            # Toon de verhalen
+            st.success("Gefeliciteerd! U hebt afgerekend. Hier is het verhaal van uw bestelling:")
+            for v in verhalen:
+                st.info(v)
 # ============================================================
 # TAB: MIJN WINKELWAGEN / BESTELLINGEN
 # ============================================================
@@ -282,16 +257,14 @@ with tab_bestellingen:
     if not st.session_state.bestellingen:
         st.info("U hebt nog niets besteld. En dat is precies de bedoeling.")
     else:
-        st.write(f"U hebt **{len(st.session_state.bestellingen)}** bestelling(en) geplaatst. Geen enkele daarvan is verzonden.")
-
         for i, bestelling in enumerate(st.session_state.bestellingen):
             with st.expander(f"Bestelling #{i+1} — {bestelling['status']}"):
                 st.write(f"**Producten:** {', '.join(bestelling['producten'])}")
                 st.write(f"**Totaal:** €{bestelling['totaal']:.2f}")
                 st.write(f"**Status:** {bestelling['status']}")
-                st.write("**Consequenties van uw keuzes:**")
-                for c in bestelling["consequenties"]:
-                    st.write(f"- {c}")
+                st.write("**Het verhaal van uw bestelling:**")
+                for v in bestelling["verhalen"]:
+                    st.write(v)
 
         st.markdown("---")
         st.caption("Al uw bestellingen zijn niet verzonden. Dat is precies wat u van ons kunt verwachten.")
