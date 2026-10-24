@@ -20,8 +20,10 @@ st.caption("Heeft u ook alles al? Dan bent u hier in de juiste winkel!")
 st.markdown("---")
 
 # --- Tabs ---
-tab_winkel, tab_over, tab_innovatie, tab_vacatures, tab_franchise, tab_ontspullen, tab_blind, tab_retour, tab_nieuwsbrief = st.tabs([
+tab_winkel, tab_afrekenen, tab_bestellingen, tab_over, tab_innovatie, tab_vacatures, tab_franchise, tab_ontspullen, tab_blind, tab_retour, tab_nieuwsbrief = st.tabs([
     "🛒 Winkel",
+    "💰 Afrekenen",
+    "📦 Mijn winkelwagen/mandje/mandje op wieletjes",
     "📖 Over ons",
     "💡 Innovatie",
     "💼 Vacatures",
