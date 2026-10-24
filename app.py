@@ -275,14 +275,19 @@ with tab_bestellingen:
     if not st.session_state.bestellingen:
         st.info("U hebt nog niets besteld. En dat is precies de bedoeling.")
     else:
+        st.write(f"U hebt **{len(st.session_state.bestellingen)}** bestelling(en) geplaatst. Geen enkele daarvan is verzonden.")
+
         for i, bestelling in enumerate(st.session_state.bestellingen):
             with st.expander(f"Bestelling #{i+1} — {bestelling['status']}"):
                 st.write(f"**Producten:** {', '.join(bestelling['producten'])}")
                 st.write(f"**Totaal:** €{bestelling['totaal']:.2f}")
                 st.write(f"**Status:** {bestelling['status']}")
-                st.write("**Consequenties:**")
+                st.write("**Consequenties van uw keuzes:**")
                 for c in bestelling["consequenties"]:
                     st.write(f"- {c}")
+
+        st.markdown("---")
+        st.caption("Al uw bestellingen zijn niet verzonden. Dat is precies wat u van ons kunt verwachten.")
 
 # ============================================================
 # TAB 2: OVER ONS
