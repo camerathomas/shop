@@ -55,7 +55,7 @@ with tab_winkel:
             st.write(product["beschrijving"])
             st.caption("📦 Op voorraad: **-465 stuks** · 🔥 POPULAIR PRODUCT · ⭐⭐⭐⭐⭐ (0 beoordelingen)")
 
-            if st.button("Bestel nu", key=product["id"]):
+            if st.button("Bestel nu", key=f"bestel_{product['id']}"):
                 st.success(
                     f"Gefeliciteerd! U hebt **{product['naam']}** besteld. "
                     f"Uw bestelling is geplaatst. Uw levering is gepland voor het jaar 3000. "
