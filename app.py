@@ -67,6 +67,10 @@ with tab_winkel:
 
             # In winkelwagentje stoppen
             if st.button("In winkelwagentje stoppen", key=f"wagen_{product['id']}"):
+                st.session_state.actieve_flow = product["id"]
+
+            # Toon de flow als deze actief is voor dit product
+            if st.session_state.get("actieve_flow") == product["id"]:
                 st.warning("De winkelwagentjes zijn helaas allemaal in gebruik. Mag het ook een winkelmandje zijn?")
 
                 keuze_mandje = st.radio(
@@ -107,7 +111,7 @@ with tab_winkel:
                         key=f"rijbewijs_{product['id']}"
                     )
 
-                    # ✅ Toevoegen aan winkelwagen (nu met opgeslagen keuzes)
+                    # Toevoegen aan winkelwagen
                     if st.button("Toevoegen aan winkelwagen", key=f"toevoegen_{product['id']}"):
                         st.session_state.winkelwagen.append({
                             "product": product["naam"],
@@ -121,6 +125,7 @@ with tab_winkel:
                                 "rijbewijs": keuze_rijbewijs
                             }
                         })
+                        st.session_state.actieve_flow = None  # Reset de flow
                         st.success(
                             f"**{product['naam']}** is toegevoegd aan uw winkelwagen, met al uw keuzes. "
                             f"U kunt verder winkelen of naar de kassa gaan."
@@ -131,6 +136,8 @@ with tab_winkel:
                     )
                 else:
                     st.info("Jammer. Dan kunt u helaas niets bestellen. Maar u kunt het altijd later opnieuw proberen.")
+                    if st.button("Sluiten", key=f"sluiten_{product['id']}"):
+                        st.session_state.actieve_flow = None
 
             st.markdown("---")
 
