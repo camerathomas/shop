@@ -18,7 +18,7 @@ cols = st.columns(3)
 
 for i, product in enumerate(producten["producten"]):
     with cols[i % 3]:
-        st.image("app/static/box1.jpg")
+        st.image("static/box1.jpg")
         st.subheader(product["naam"])
         st.write(f"**{product['prijs']}**")
         st.write(product["beschrijving"])
