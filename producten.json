@@ -5,14 +5,14 @@
       "naam": "Het Grote Niets",
       "prijs": "€10,00",
       "beschrijving": "U ontvangt geen pakket. Geen doos. Geen inhoud. Alleen de wetenschap dat u iets hebt gekocht dat niet bestaat.",
-      "afbeelding": "app/static/box1.jpg"
+      "afbeelding": "static/box1.jpg"
     },
     {
       "id": "het_kleine_nietsje",
       "naam": "Het Kleine Nietsje",
       "prijs": "€5,00",
       "beschrijving": "Voor de bescheiden koper. Een nietsje om erbij te hebben. Gewoon een beetje niets.",
-      "afbeelding": "app/static/box2.jpg"
+      "afbeelding": "static/box2.jpg"
     },
     {
       "id": "onzichtbare_steelstofzuiger",
