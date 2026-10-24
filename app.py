@@ -1,4 +1,4 @@
-gimport json
+import json
 import streamlit as st
 
 st.set_page_config(page_title="Het Grote Niets", page_icon="🛒", layout="wide")
