@@ -32,17 +32,11 @@ tab_winkel, tab_over, tab_innovatie, tab_vacatures, tab_franchise, tab_ontspulle
 # ============================================================
 with tab_winkel:
     st.markdown("""
-    > **🎁 TIJDELIJKE ACTIE:** Bij elke bestelling van €10,00 of meer ontvangt u een onzichtbaar kado.
-    > Op=op! (Wat niet kan, want er is niets.)
+    > **🎁 TIJDELIJKE ACTIE:** ...
     """)
-
     st.markdown("""
-    > **🔥 1 HALEN, 2 BETALEN!** Minder is meer! Dus zelfs minder is niet goed genoeg!
-    > U kunt veel beter 2 keer niets kopen dan slechts 1 keer niets, en dat voor maar de dubbele prijs!
-    > Bij deze actie moet u wel zelf de verzendkosten betalen, en u mag zelf raden hoe hoog die zijn.
-    > Als u ze te laag inschat, kunnen we helaas niet leveren, dus denk daar goed over na.
+    > **🔥 1 HALEN, 2 BETALEN!** ...
     """)
-
     st.markdown("---")
 
     cols = st.columns(3)
@@ -55,33 +49,73 @@ with tab_winkel:
             st.write(product["beschrijving"])
             st.caption("📦 Op voorraad: **-465 stuks** · 🔥 POPULAIR PRODUCT · ⭐⭐⭐⭐⭐ (0 beoordelingen)")
 
+            # ✅ HIER: key voor "Bestel nu"
             if st.button("Bestel nu", key=f"bestel_{product['id']}"):
-                st.success(
-                    f"Gefeliciteerd! U hebt **{product['naam']}** besteld. "
-                    f"Uw bestelling is geplaatst. Uw levering is gepland voor het jaar 3000. "
-                    f"Wilt u een snellere levering? Dat kan niet, maar u kunt wel voor de garantielevering betalen. "
-                    f"Het product wordt 100% duurder, maar u weet dan 100% zeker dat u echt niets krijgt. Dat is logisch!"
-                )
+                st.success(...)
 
-            # NIEUW: Winkelwagentje-flow
+            # ✅ HIER: key voor "In winkelwagentje stoppen"
             if st.button("In winkelwagentje stoppen", key=f"wagen_{product['id']}"):
                 st.warning("De winkelwagentjes zijn helaas allemaal in gebruik. Mag het ook een winkelmandje zijn?")
+                
+                # ✅ HIER: key voor de radio
                 keuze_mandje = st.radio(
                     "Mag het ook een winkelmandje zijn?",
                     ["Ja", "Nee"],
                     key=f"mandje_{product['id']}"
                 )
+                
                 if keuze_mandje == "Ja":
+                    # ✅ HIER: key voor type
                     keuze_type = st.radio(
                         "En wilt u dan liever een mandje zelf dragen of een model met uitklaphengsel en wieletjes?",
                         ["Zelf dragen", "Met uitklaphengsel en wieletjes"],
                         key=f"type_{product['id']}"
                     )
+                    
+                    # ✅ HIER: key voor kleur
+                    keuze_kleur = st.radio(
+                        "Welke kleur wilt u?",
+                        ["Neon geel", "Neon geel", "Neon geel"],
+                        key=f"kleur_{product['id']}"
+                    )
+                    
+                    # ✅ HIER: key voor materiaal
+                    keuze_materiaal = st.radio(
+                        "Welk materiaal wilt u?",
+                        ["Hout", "Plastic", "IJzer", "Steen", "Gietbeton"],
+                        key=f"materiaal_{product['id']}"
+                    )
+                    
+                    # ✅ HIER: key voor inpakken
+                    keuze_inpakken = st.radio(
+                        "Moeten we het inpakken als een kadootje?",
+                        ["Ja", "Nee"],
+                        key=f"inpakken_{product['id']}"
+                    )
+                    
+                    # ✅ HIER: key voor openbare weg
+                    keuze_openbare_weg = st.radio(
+                        "Wilt u ermee de openbare weg op?",
+                        ["Ja", "Nee"],
+                        key=f"weg_{product['id']}"
+                    )
+                    
+                    # ✅ HIER: key voor rijbewijs
+                    keuze_rijbewijs = st.radio(
+                        "Heeft u een rijbewijs W(inkelwagen)?",
+                        ["Ja", "Nee"],
+                        key=f"rijbewijs_{product['id']}"
+                    )
+                    
                     st.success(
                         f"Uw bestelling komt eraan. We hebben de fabriek in Taiwan een mailtje gestuurd. "
                         f"U hoeft niets te doen. Er wordt vanzelf €800 van uw rekening afgeschreven. "
                         f"Het blijkt dat ze daar toch nog een extra winkelwagentje voor u hadden, "
                         f"dus u kunt deze binnenkort in uw brievenbus verwachten!"
+                    )
+                    st.info(
+                        "Ach, een rijbewijs is niet nodig. En we hebben alleen maar neon geel als kleur. "
+                        "Maar wees gerust: morgen staat het niet voor uw deur, want het past waarschijnlijk toch niet door uw brievenbus!"
                     )
                 else:
                     st.info("Jammer. Dan kunt u helaas niets bestellen. Maar u kunt het altijd later opnieuw proberen.")
