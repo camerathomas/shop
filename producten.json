@@ -5,154 +5,154 @@
       "naam": "Het Grote Niets",
       "prijs": "€10,00",
       "beschrijving": "U ontvangt geen pakket. Geen doos. Geen inhoud. Alleen de wetenschap dat u iets hebt gekocht dat niet bestaat.",
-      "afbeelding": "box1.jpeg"
+      "afbeelding": "static/box1.jpeg"
     },
     {
       "id": "het_kleine_nietsje",
       "naam": "Het Kleine Nietsje",
       "prijs": "€5,00",
       "beschrijving": "Voor de bescheiden koper. Een nietsje om erbij te hebben. Gewoon een beetje niets.",
-      "afbeelding": "https://i.imgur.com/fY5GMN4.jpeg"
+      "afbeelding": "static/box2.jpeg"
     },
     {
       "id": "onzichtbare_steelstofzuiger",
       "naam": "De Onzichtbare Steelstofzuiger",
       "prijs": "€10,00",
       "beschrijving": "Zonder snoer, zonder oplader, zonder stofzuiger. Inclusief gratis niet-bijpassende stekkerdoos (wordt niet verzonden).",
-      "afbeelding": "app/static/box3.jpg"
+      "afbeelding": "static/box3.jpeg"
     },
     {
       "id": "lege_zak",
       "naam": "De Lege Zak",
       "prijs": "€8,00",
       "beschrijving": "Een zak waar u niets in kunt doen. En dat is precies de bedoeling.",
-      "afbeelding": "app/static/box4.jpg"
+      "afbeelding": "static/box4.jpeg"
     },
     {
       "id": "onzichtbaar_overhemd",
       "naam": "Het Onzichtbare Overhemd",
       "prijs": "€25,00",
       "beschrijving": "Verkrijgbaar in alle kleuren die er niet zijn. Maat: one size fits none.",
-      "afbeelding": "app/static/box5.jpg"
+      "afbeelding": "static/box5.jpeg"
     },
     {
       "id": "blind_kopen",
       "naam": "Het Onbekende Niets",
       "prijs": "€20,00",
       "beschrijving": "U krijgt geen productbeschrijving. Geen foto. Geen idee. Want u krijgt exact wat u wilt: niets.",
-      "afbeelding": "app/static/box6.jpg"
+      "afbeelding": "static/box6.jpeg"
     },
     {
       "id": "onruikbare_aftershave",
       "naam": "Onruikbare Aftershave",
       "prijs": "€15,00",
       "beschrijving": "Ruikt naar niets. Trekt niemand aan. Verjaagt geen muggen.",
-      "afbeelding": "app/static/box7.jpg"
+      "afbeelding": "static/box7.jpeg"
     },
     {
       "id": "onzichtbaar_kado",
       "naam": "Het Onzichtbare Kado",
       "prijs": "€0,00",
       "beschrijving": "Gratis bij elke bestelling. Wordt niet verzonden. U kunt er niet naar uitkijken.",
-      "afbeelding": "app/static/box8.jpg"
+      "afbeelding": "static/box8.jpeg"
     },
     {
       "id": "niet_omhulsel",
       "naam": "Het Niet-Omhulsel",
       "prijs": "€12,00",
       "beschrijving": "Omhult niets. Bevat niets. Is er gewoon echt niet.",
-      "afbeelding": "app/static/box9.jpg"
+      "afbeelding": "static/box9.jpeg"
     },
     {
       "id": "drie_lege_dozen",
       "naam": "De Drie-Lege-Dozen-Niet-Bundel",
       "prijs": "€15,00",
       "beschrijving": "Drie keer niets, speciaal voor nachtbrakers. Alleen tussen 04:00 en 05:00.",
-      "afbeelding": "app/static/box10.jpg"
+      "afbeelding": "static/box10.jpeg"
     },
     {
       "id": "onzichtbare_gadget",
       "naam": "De Onzichtbare Gadget",
       "prijs": "€12,50",
       "beschrijving": "Doet niets. Lost niets op. Weegt niets. Ruikt naar niets. Muisstil.",
-      "afbeelding": "app/static/box11.jpg"
+      "afbeelding": "static/box11.jpeg"
     },
     {
       "id": "betekenisloze_cadeau",
       "naam": "Het Betekenisloze Cadeau",
       "prijs": "€15,00",
       "beschrijving": "Voor de persoon die alles al heeft. En zelfs voor de persoon die niets heeft.",
-      "afbeelding": "app/static/box12.jpg"
+      "afbeelding": "static/box12.jpeg"
     },
     {
       "id": "muisstille_niets",
       "naam": "Het Muisstille Niets",
       "prijs": "€10,00",
       "beschrijving": "U zult eerder een muis horen dan dit product. En muizen zijn stil.",
-      "afbeelding": "app/static/box13.jpg"
+      "afbeelding": "static/box13.jpeg"
     },
     {
       "id": "keizerlijke_jas",
       "naam": "De Keizerlijke Jas",
       "prijs": "€40,00",
       "beschrijving": "Voor wie durft te doen alsof. Geïnspireerd op een klassiek sprookje.",
-      "afbeelding": "app/static/box14.jpg"
+      "afbeelding": "static/box14.jpeg"
     },
     {
       "id": "onzichtbare_broek",
       "naam": "De Onzichtbare Broek",
       "prijs": "€30,00",
       "beschrijving": "U zult zich vrij voelen. En dat is precies de bedoeling.",
-      "afbeelding": "app/static/box15.jpg"
+      "afbeelding": "static/box15.jpeg"
     },
     {
       "id": "onhoorbare_muziek",
       "naam": "Onhoorbare Muziek",
       "prijs": "€20,00",
       "beschrijving": "U hoort niets. Maar u weet dat het er is. Of niet.",
-      "afbeelding": "app/static/box16.jpg"
+      "afbeelding": "static/box16.jpeg"
     },
     {
       "id": "zeilboot",
       "naam": "De Zeilboot die niet vaart op de wind",
       "prijs": "€50,00",
       "beschrijving": "Vaart op iets totaal anders. Wat dat is, weet onze R&D-afdeling nog niet.",
-      "afbeelding": "app/static/box17.jpg"
+      "afbeelding": "static/box17.jpeg"
     },
     {
       "id": "complete_niets",
       "naam": "Het Complete Niets",
       "prijs": "€25,00",
       "beschrijving": "Alles wat u niet nodig hebt, in één pakket dat u niet ontvangt. De ultieme leegte.",
-      "afbeelding": "app/static/box18.jpg"
+      "afbeelding": "static/box18.jpeg"
     },
     {
       "id": "niets_van_de_maand",
       "naam": "Het Niets van de Maand",
       "prijs": "€15,00/maand",
       "beschrijving": "Elke maand een verrassing: welk niets krijgt u deze keer niet?",
-      "afbeelding": "app/static/box19.jpg"
+      "afbeelding": "static/box19.jpeg"
     },
     {
       "id": "anti_cadeau",
       "naam": "Het Anti-Cadeau",
       "prijs": "€20,00",
       "beschrijving": "Ideaal voor mensen die je niet aardig vindt. Ze krijgen niets, maar ze weten dat je er wel aan gedacht hebt.",
-      "afbeelding": "app/static/box20.jpg"
+      "afbeelding": "static/box20.jpeg"
     },
     {
       "id": "onbekende_niets",
       "naam": "Het Onbekende Niets",
       "prijs": "€20,00",
       "beschrijving": "U weet niet wat u krijgt. Wij ook niet. Niemand weet het.",
-      "afbeelding": "app/static/box21.jpg"
+      "afbeelding": "static/box21.jpeg"
     },
     {
       "id": "risico",
       "naam": "Het Risico",
       "prijs": "€30,00",
       "beschrijving": "Iets duurder, vanwege het hogere risico. Maar u krijgt gegarandeerd niets.",
-      "afbeelding": "app/static/box22.jpg"
+      "afbeelding": "static/box22.jpeg"
     }
   ]
 }
