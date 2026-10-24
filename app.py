@@ -54,70 +54,75 @@ with tab_winkel:
             st.write(product["beschrijving"])
             st.caption("📦 Op voorraad: **-465 stuks** · 🔥 POPULAIR PRODUCT · ⭐⭐⭐⭐⭐ (0 beoordelingen)")
 
-            # ✅ HIER: key voor "Bestel nu"
+            # Bestel nu-knop
             if st.button("Bestel nu", key=f"bestel_{product['id']}"):
-                st.success(...)
+                st.success(
+                    f"Gefeliciteerd! U hebt **{product['naam']}** besteld. "
+                    f"Uw bestelling is geplaatst. Uw levering is gepland voor het jaar 3000. "
+                    f"Wilt u een snellere levering? Dat kan niet, maar u kunt wel voor de garantielevering betalen. "
+                    f"Het product wordt 100% duurder, maar u weet dan 100% zeker dat u echt niets krijgt. Dat is logisch!"
+                )
 
-            # ✅ HIER: key voor "In winkelwagentje stoppen"
+            # In winkelwagentje stoppen
             if st.button("In winkelwagentje stoppen", key=f"wagen_{product['id']}"):
-                st.warning("De winkelwagentjes zijn helaas allemaal in gebruik.")
-                
-                # ✅ HIER: key voor de radio
+                st.warning("De winkelwagentjes zijn helaas allemaal in gebruik. Mag het ook een winkelmandje zijn?")
+
                 keuze_mandje = st.radio(
                     "Mag het ook een winkelmandje zijn?",
                     ["Ja", "Nee"],
                     key=f"mandje_{product['id']}"
                 )
-                
+
                 if keuze_mandje == "Ja":
-                    # ✅ HIER: key voor type
                     keuze_type = st.radio(
                         "En wilt u dan liever een mandje zelf dragen of een model met uitklaphengsel en wieletjes?",
                         ["Zelf dragen", "Met uitklaphengsel en wieletjes"],
                         key=f"type_{product['id']}"
                     )
-                    
-                    # ✅ HIER: key voor kleur
                     keuze_kleur = st.radio(
                         "Welke kleur wilt u?",
                         ["Groen", "Blauw", "Rood"],
                         key=f"kleur_{product['id']}"
                     )
-                    
-                    # ✅ HIER: key voor materiaal
                     keuze_materiaal = st.radio(
                         "Welk materiaal wilt u?",
-                        ["Hout", "Plastic", "IJzer", "Steen", "Gietbeton", "Tweedehands WC-papier(klimaatvriendelijk)"],
+                        ["Hout", "Plastic", "IJzer", "Steen", "Gietbeton", "Tweedehands WC-papier (klimaatvriendelijk)"],
                         key=f"materiaal_{product['id']}"
                     )
-                    
-                    # ✅ HIER: key voor inpakken
                     keuze_inpakken = st.radio(
                         "Moeten we het inpakken als een kadootje?",
                         ["Ja", "Nee"],
                         key=f"inpakken_{product['id']}"
                     )
-                    
-                    # ✅ HIER: key voor openbare weg
                     keuze_openbare_weg = st.radio(
                         "Wilt u ermee de openbare weg op?",
                         ["Ja", "Nee"],
                         key=f"weg_{product['id']}"
                     )
-                    
-                    # ✅ HIER: key voor rijbewijs
                     keuze_rijbewijs = st.radio(
                         "Heeft u een rijbewijs W(inkelwagen)?",
                         ["Ja", "Nee"],
                         key=f"rijbewijs_{product['id']}"
                     )
-                    
-                    st.success(
-                        f"Uw bestelling komt eraan. We hebben de fabriek in Taiwan een mailtje gestuurd. "
-                        f"U hoeft niets te doen. Er wordt vanzelf €800 van uw rekening afgeschreven. "
-                        f"Het blijkt dat ze daar toch nog een extra winkelwagentje voor u hadden, "
-                        f"dus u kunt deze binnenkort in uw brievenbus verwachten!"
-                    )
+
+                    # ✅ Toevoegen aan winkelwagen (nu met opgeslagen keuzes)
+                    if st.button("Toevoegen aan winkelwagen", key=f"toevoegen_{product['id']}"):
+                        st.session_state.winkelwagen.append({
+                            "product": product["naam"],
+                            "prijs": product["prijs"],
+                            "keuzes": {
+                                "type": keuze_type,
+                                "kleur": keuze_kleur,
+                                "materiaal": keuze_materiaal,
+                                "inpakken": keuze_inpakken,
+                                "openbare_weg": keuze_openbare_weg,
+                                "rijbewijs": keuze_rijbewijs
+                            }
+                        })
+                        st.success(
+                            f"**{product['naam']}** is toegevoegd aan uw winkelwagen, met al uw keuzes. "
+                            f"U kunt verder winkelen of naar de kassa gaan."
+                        )
                     st.info(
                         "Ach, een rijbewijs is niet nodig. En we hebben alleen maar neon geel als kleur. "
                         "Maar wees gerust: morgen staat het niet voor uw deur, want het past waarschijnlijk toch niet door uw brievenbus!"
