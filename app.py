@@ -14,19 +14,16 @@ st.title("🛒 Het Grote Niets")
 st.caption("Heeft u ook alles al? Dan bent u hier in de juiste winkel!")
 st.markdown("---")
 
-# Bepaal de basis-URL van de app
-# Op Streamlit Cloud is dit bijvoorbeeld: https://jouwapp.streamlit.app
-base_url = st.context.headers.get("Host", "localhost:8501")
-if "streamlit.app" in base_url:
-    base_url = f"https://{base_url}"
+# HARDCODEER HIER DE URL VAN JOUW APP
+# Vervang dit door de echte URL die je in je browser ziet
+APP_URL = "https://jouwappnaam.streamlit.app"  # <-- PAS DIT AAN
 
 cols = st.columns(3)
 
 for i, product in enumerate(producten["producten"]):
     with cols[i % 3]:
-        # Construeer de volledige URL naar het statische bestand
         # product["afbeelding"] is "app/static/box1.jpg"
-        image_url = f"{base_url}/{product['afbeelding']}"
+        image_url = f"{APP_URL}/{product['afbeelding']}"
         try:
             st.image(image_url, use_container_width=True)
         except Exception as e:
