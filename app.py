@@ -3,6 +3,11 @@ import streamlit as st
 
 st.set_page_config(page_title="Het Grote Niets", page_icon="🛒", layout="wide")
 
+if "winkelwagen" not in st.session_state:
+    st.session_state.winkelwagen = []
+if "bestellingen" not in st.session_state:
+    st.session_state.bestellingen = []
+
 @st.cache_data
 def laad_producten():
     with open("producten.json", "r", encoding="utf-8") as f:
