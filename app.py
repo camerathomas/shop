@@ -75,14 +75,14 @@ with tab_winkel:
                     # ✅ HIER: key voor kleur
                     keuze_kleur = st.radio(
                         "Welke kleur wilt u?",
-                        ["Neon geel", "Neon geel", "Neon geel"],
+                        ["Groen", "Blauw", "Rood"],
                         key=f"kleur_{product['id']}"
                     )
                     
                     # ✅ HIER: key voor materiaal
                     keuze_materiaal = st.radio(
                         "Welk materiaal wilt u?",
-                        ["Hout", "Plastic", "IJzer", "Steen", "Gietbeton"],
+                        ["Hout", "Plastic", "IJzer", "Steen", "Gietbeton", "Tweedehands WC-papier(klimaatvriendelijk)"],
                         key=f"materiaal_{product['id']}"
                     )
                     
