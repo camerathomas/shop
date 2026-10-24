@@ -141,67 +141,6 @@ with tab_winkel:
     st.info("Zelfs de grootste filosofen zijn het erover eens: Niets is het overdenken waard. En bij ons kunt u het ook kopen.")
 
 # ============================================================
-# De overige tabs blijven ongewijzigd
-# ============================================================
-# ... (de rest van de tabs: Over ons, Innovatie, Vacatures, Franchise,
-#      Ontspullen, Blind kopen, Retourneren, Nieuwsbrief)
-
-# ============================================================
-# TAB 1: WINKEL
-# ============================================================
-with tab_winkel:
-    st.markdown("""
-    > **🎁 TIJDELIJKE ACTIE:** Bij elke bestelling van €10,00 of meer ontvangt u een onzichtbaar kado.
-    > Op=op! (Wat niet kan, want er is niets.)
-    """)
-
-    st.markdown("""
-    > **🔥 1 HALEN, 2 BETALEN!** Minder is meer! Dus zelfs minder is niet goed genoeg!
-    > U kunt veel beter 2 keer niets kopen dan slechts 1 keer niets, en dat voor maar de dubbele prijs!
-    > Bij deze actie moet u wel zelf de verzendkosten betalen, en u mag zelf raden hoe hoog die zijn.
-    > Als u ze te laag inschat, kunnen we helaas niet leveren, dus denk daar goed over na.
-    """)
-
-    st.markdown("---")
-
-    cols = st.columns(3)
-
-    for i, product in enumerate(producten["producten"]):
-        with cols[i % 3]:
-            st.image(product["afbeelding"])
-            st.subheader(product["naam"])
-            st.write(f"**{product['prijs']}**")
-            st.write(product["beschrijving"])
-            st.caption("📦 Op voorraad: **-465 stuks** · 🔥 POPULAIR PRODUCT · ⭐⭐⭐⭐⭐ (0 beoordelingen)")
-
-            if st.button("Bestel nu", key=product["id"]):
-                st.success(
-                    f"Gefeliciteerd! U hebt **{product['naam']}** besteld. "
-                    f"Uw bestelling is geplaatst. Uw levering is gepland voor het jaar 3000. "
-                    f"Wilt u een snellere levering? Dat kan niet, maar u kunt wel voor de garantielevering betalen. "
-                    f"Het product wordt 100% duurder, maar u weet dan 100% zeker dat u echt niets krijgt. Dat is logisch!"
-                )
-            st.markdown("---")
-
-    # Klantenreviews
-    st.header("⭐ Wat zeggen onze klanten?")
-    st.write("**0/5 sterren** — Gebaseerd op 0 beoordelingen")
-    st.write('*"..."* — Anoniem')
-    st.write('*"..."* — Ook anoniem')
-    st.write('*"..."* — Iemand anders')
-    st.success("**Wat zeggen onze klanten? Helemaal niets! Dus ze zijn blij.**")
-
-    st.markdown("---")
-
-    # Filosofen-quotes
-    st.header("📜 Grote denkers over het Niets")
-    st.write('*"Niets is nutteloos, zelfs het nutteloze niet."* — Montaigne')
-    st.write('*"Niets is nuttiger dan de nutteloze kunsten."* — Ovidius')
-    st.write('*"Het nuttige is een nutteloze last."* — Ionesco')
-    st.write('*"Niets is zo interessant als het niets."* — Graham Priest')
-    st.info("Zelfs de grootste filosofen zijn het erover eens: Niets is het overdenken waard. En bij ons kunt u het ook kopen.")
-
-# ============================================================
 # TAB 2: OVER ONS
 # ============================================================
 with tab_over:
