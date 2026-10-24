@@ -267,6 +267,7 @@ with tab_bestellingen:
                 st.write("**Het verhaal van uw bestelling:**")
                 for v in bestelling["verhalen"]:
                     st.write(v)
+                st.info(bestelling["afsluiting"])
 
         st.markdown("---")
         st.caption("Al uw bestellingen zijn niet verzonden. Dat is precies wat u van ons kunt verwachten.")
