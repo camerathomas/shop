@@ -15,24 +15,32 @@ st.caption("Heeft u ook alles al? Dan bent u hier in de juiste winkel!")
 st.markdown("---")
 
 # --- Tabs ---
-tab_winkel, tab_over, tab_innovatie, tab_vacatures, tab_franchise, tab_ontspullen, tab_blind = st.tabs([
+tab_winkel, tab_over, tab_innovatie, tab_vacatures, tab_franchise, tab_ontspullen, tab_blind, tab_retour, tab_nieuwsbrief = st.tabs([
     "🛒 Winkel",
     "📖 Over ons",
     "💡 Innovatie",
     "💼 Vacatures",
     "📋 Franchise",
     "🗑️ Ontspullen",
-    "🕶️ Blind kopen"
+    "🕶️ Blind kopen",
+    "🔄 Retourneren",
+    "📧 Nieuwsbrief"
 ])
 
 # ============================================================
 # TAB 1: WINKEL
 # ============================================================
 with tab_winkel:
-    # Actie-banner
     st.markdown("""
     > **🎁 TIJDELIJKE ACTIE:** Bij elke bestelling van €10,00 of meer ontvangt u een onzichtbaar kado.
     > Op=op! (Wat niet kan, want er is niets.)
+    """)
+
+    st.markdown("""
+    > **🔥 1 HALEN, 2 BETALEN!** Minder is meer! Dus zelfs minder is niet goed genoeg!
+    > U kunt veel beter 2 keer niets kopen dan slechts 1 keer niets, en dat voor maar de dubbele prijs!
+    > Bij deze actie moet u wel zelf de verzendkosten betalen, en u mag zelf raden hoe hoog die zijn.
+    > Als u ze te laag inschat, kunnen we helaas niet leveren, dus denk daar goed over na.
     """)
 
     st.markdown("---")
@@ -45,15 +53,14 @@ with tab_winkel:
             st.subheader(product["naam"])
             st.write(f"**{product['prijs']}**")
             st.write(product["beschrijving"])
-
-            # Voorraad-indicator (absurd)
             st.caption("📦 Op voorraad: **-465 stuks** · 🔥 POPULAIR PRODUCT · ⭐⭐⭐⭐⭐ (0 beoordelingen)")
 
             if st.button("Bestel nu", key=product["id"]):
                 st.success(
                     f"Gefeliciteerd! U hebt **{product['naam']}** besteld. "
-                    f"U ontvangt niets. Uw bestelling wordt niet verzonden. "
-                    f"Bedankt voor uw betaling van {product['prijs']}."
+                    f"Uw bestelling is geplaatst. Uw levering is gepland voor het jaar 3000. "
+                    f"Wilt u een snellere levering? Dat kan niet, maar u kunt wel voor de garantielevering betalen. "
+                    f"Het product wordt 100% duurder, maar u weet dan 100% zeker dat u echt niets krijgt. Dat is logisch!"
                 )
             st.markdown("---")
 
@@ -203,6 +210,33 @@ with tab_blind:
 
     st.subheader("Waarom Niets met een hoofdletter?")
     st.write("Omdat het belangrijk voor ons is. En omdat het groter klinkt. En omdat wij deze keer Niets Niet voor Niets met een hoofdletter schrijven. Tel uit uw winst.")
+
+# ============================================================
+# TAB 8: RETOURNEREN
+# ============================================================
+with tab_retour:
+    st.header("🔄 Retourneren")
+    st.write("**Wij nemen geen retour in ontvangst, of u moet niets hebben geretourneerd.** In dat geval maken wij daar geen probleem van.")
+
+    st.write("Mocht u toch iets willen retourneren, dan geven wij hierbij **niet** ons adres. Zet linksboven in de hoek **niet** ter attentie van wie u het wilt sturen.")
+
+    st.write("Ons team bepaalt zelf of het retourpakket iets is waar ze iets mee moeten, maar waarschijnlijk hoort u nooit meer van ons.")
+
+# ============================================================
+# TAB 9: NIEUWSBRIEF
+# ============================================================
+with tab_nieuwsbrief:
+    st.header("📧 Nieuwsbrief")
+    st.write("""
+    Heeft u daar ook zo last van? Abonnementen op nieuwsbrieven die eindeloos veel aandacht vragen?
+
+    Abonneer dan nu gelijk op onze nieuwsbrief, en wij sturen u helemaal niets op, zelfs geen lege mail. Hoewel sommige lieden binnen ons bedrijf een lege mail veel correcter vinden, zullen we ons voorlopig behoeden om een vermoeiende nieuwsbrief neer te pennen.
+
+    En om het nou aan AI te vragen, dat is slecht voor het milieu. Dus nee: u krijgt geen nieuwsbrief, maar kunt zich er wel op abonneren.
+    """)
+
+    if st.button("Abonneer u op de nieuwsbrief"):
+        st.success("Gefeliciteerd! U bent abonnee. U ontvangt niets. U kunt zich op elk moment afmelden, maar dat hoeft niet, want u ontvangt toch niets.")
 
 st.markdown("---")
 st.caption(f"Totaal aantal producten: {len(producten['producten'])} · Allemaal even afwezig.")
