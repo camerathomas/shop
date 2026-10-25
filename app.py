@@ -411,6 +411,43 @@ with tab_vacatures:
     st.write("- Werkplezier: **gegarandeerd** (want u hoeft niets te doen)")
 
     st.info("Wij zijn een werkgever waar u niets aan hebt.")
+    # ============================================================
+# TAB X: VACATURES
+# ============================================================
+with tab_vacatures:
+    st.header("💼 Vacatures")
+    
+    st.write("""
+    **Werken bij ons?**
+    Wij zijn altijd op zoek naar mensen die net als wij het Niets omarmen. Mensen die begrijpen dat een lege gang met beton een prachtige metafoor is voor de leegte van het bestaan. En die daar urenlang naar kunnen staren, of op hun telefoon kunnen kijken.
+    """)
+
+    # De werkruimte foto
+    # Zorg dat deze foto in je 'static' map staat, bijv. als 'vacature_gang.jpg'
+    st.image("static/nieuwewerkruimte.jpg", use_container_width=True)
+    st.caption("*Onze moderne, open werkruimte. Sfeervol verlicht en voorzien van alle basisbehoeften (een stoel).*")
+
+    st.markdown("---")
+    st.subheader("Wat wij bieden:")
+    st.write("""
+    - Een uitstekende werkplek in een historisch betonnen complex.
+    - Eindeloze stilte (afgezien van het zoemen van de tl-buizen).
+    - Een werkgever die u niet lastigvalt met 'visie' of 'doelen', want die bestaan toch niet.
+    - De mogelijkheid om 24/7 op uw telefoon te kijken (zolang u maar niets doet).
+    - Een salaris dat net zo betekenisloos is als uw werkzaamheden.
+    """)
+
+    st.subheader("Wat wij verwachten:")
+    st.write("""
+    - U bent minimaal 72 uur per week beschikbaar.
+    - U kunt goed alleen zijn.
+    - U heeft geen behoefte aan sociale interactie of bevestiging.
+    - U bent bereid om te doen alsof u iets doet, terwijl u eigenlijk niets doet.
+    - U spreekt foutloos Latijn (dit is een harde eis, vraag het niet waarom).
+    """)
+
+    st.markdown("---")
+    st.info("**Solliciteren?** Stuur een video van uzelf waarin u 3 uur lang niets zegt en naar een muur kijkt naar: vacatures@niets.nl. We nemen alleen contact op als we u *niet* willen aannemen.")
 
 # ============================================================
 # TAB 5: FRANCHISE
