@@ -725,7 +725,7 @@ with tab_faq:
 import streamlit as st
 
 # ... (je andere code) ...
-
+st.header("Ontsnappingsoutes")
 st.markdown("---")
 st.subheader("🚪 Ontsnappen?")
 st.write("""
@@ -737,11 +737,10 @@ Als u op deze knop drukt, komt u in contact met filosofen uit de antieke tijd to
 st.link_button("Bezoek de Denkkrant", "https://denkkrant.streamlit.app/")
 
 st.markdown("---")
-st.subheader("🚪 praten met een filosoof-coach?")
+st.subheader("🚪 Praten met een filosoof-coach?")
 st.write("""
 Heeft u behoefte aan geestelijke ondersteuning? Of wilt u gezellig met een filosoof praten over het Niets, dan kunt u deze weg volgen:
 
-**Edoch, vergewis u ervan dat hun vragen scherp kunnen zijn!
+**Edoch, vergewis u ervan dat hun vragen scherp kunnen zijn!**
 """)
-st.link_button("Bezoek de Coach Aurelius", "https://coachaurelius.streamlit.app/")
-
+st.link_button("Bezoek Coach Aurelius", "https://coachaurelius.streamlit.app/")
