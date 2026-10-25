@@ -725,7 +725,7 @@ with tab_faq:
 import streamlit as st
 
 # ... (je andere code) ...
-st.header("Ontsnappingsoutes")
+st.header("Ontsnappingsroutes")
 st.markdown("---")
 st.subheader("🚪 Ontsnappen?")
 st.write("""
