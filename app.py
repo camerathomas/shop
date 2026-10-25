@@ -301,8 +301,8 @@ with tab_over:
     # ... (bestaande code van de Over Ons tab, inclusief de teamfoto) ...
 
     st.markdown("---")
-    st.subheader("Onze helden (ofzo)")
-    st.write("*Wij stellen ons niet voor. Maar hier zijn ze dan toch. Onze medewerkers, die dag en nacht paraat staan om niets te doen.*")
+    st.subheader("Onze helden")
+    st.write("*Wij stellen ons niet voor. Maar hier zijn ze dan toch. De belangrijkste stuurkrachten van onze arbeidersfamilie, die het schip varende weten te houden!*")
 
     # We maken 11 kolommen aan, 4 per rij
     # We loopen door de 11 foto's heen
