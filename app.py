@@ -442,18 +442,19 @@ with tab_franchise:
 # ============================================================
 with tab_ontspullen:
     st.header("🗑️ Ontspullen")
+    
     st.write("""
-    Vergeet niet: als u nu iets hebt gekocht, moet u eerst iets wegdoen in huis. Want anders past uw aankoop er niet bij. En het staat in onze algemene voorwaarden. We moeten dit streng controleren en handhaven, anders komt er nooit wat van terecht. We behandelen daarom iedere klant als een fraudeur in de dop. Om te bewijzen dat u eventueel geen fraudeur bent, en daadwerkelijk aan de voorwaarde vodoet om niets te ontvangen, vragen wij u het volgende: 
+    Vergeet niet: als u nu iets hebt gekocht, moet u eerst iets wegdoen in huis. Want anders past uw aankoop er niet bij. En het staat in onze algemene voorwaarden. We moeten dit streng controleren en handhaven, anders komt er nooit wat van terecht. We behandelen daarom iedere klant als een fraudeur in de dop. Om te bewijzen dat u eventueel geen fraudeur bent, en daadwerkelijk aan de voorwaarde voldoet om niets te ontvangen, vragen wij u het volgende: 
 
     1. Upload een video van iets wat u daadwerkelijk uit huis gooit, 
-    2. Stop het weggeooide spul in een gesloten vuilniszak, 
+    2. Stop het weggegooide spul in een gesloten vuilniszak, 
     3. Laat de camera te allen tijde gericht op de vuilniszak totdat hij in de vuilnisauto verdwijnt.
     4. Gebruik geen accu's maar stroom uit een stopcontact, of gebruik uw aggregaat.
     5. Laat een tijdcode meelopen in het beeld.
-    6. Zet de camera niet te dicht naast de aggrgaat (het geluid wordt niet gebruikt maar een aggrgaat overstemt alle gesprekken die u in huis voert, en soms is het wel graig om even mee te luisteren).
-    7. Zeg tegen uw huisgenoten om niet ontbloot voor de camera langs te lopen, want dat zien we als een afleidingsmanouvre, waardoor u sowieso al niet aan de voorwaarden voldoet om de aankoop door te laten gaan.
-    8. Wees er zeker van dat er geen honden tegen de vuilniszak aan plassen. Dit is verder geen voorwaarde met consekwenties, maar meer een tip onzerzijds naar uw kant. 
-    9. Op het moment dat de vuilnisman of vuilnisvrouw uw zak pakt, let er dan goed om om alle handelingen close-up in beeld te houden, en het dienstdoende personeel goed te volgen in al hun handelingen, totdat de zak in de vuilnisauto verdwijnt.
+    6. Zet de camera niet te dicht naast de aggregaat (het geluid wordt niet gebruikt maar een aggregaat overstemt alle gesprekken die u in huis voert, en soms is het wel grappig om even mee te luisteren).
+    7. Zeg tegen uw huisgenoten om niet ontbloot voor de camera langs te lopen, want dat zien we als een afleidingsmanoeuvre, waardoor u sowieso al niet aan de voorwaarden voldoet om de aankoop door te laten gaan.
+    8. Wees er zeker van dat er geen honden tegen de vuilniszak aan plassen. Dit is verder geen voorwaarde met consequenties, maar meer een tip onzerzijds naar uw kant. 
+    9. Op het moment dat de vuilnisman of vuilnisvrouw uw zak pakt, let er dan goed op om alle handelingen close-up in beeld te houden, en het dienstdoende personeel goed te volgen in al hun handelingen, totdat de zak in de vuilnisauto verdwijnt.
     10. Houdt de vuilniszak duidelijk zichtbaar in beeld, en zorg dat u in focus blijft, want alle onscherpe beelden moeten we helaas afkeuren. U zult dan niets ontvangen, terwijl u er wel voor hebt betaald. 
 
     **Onze regels:**
@@ -461,14 +462,60 @@ with tab_ontspullen:
     - Beschrijving van elke gebeurtenis in **foutloos Latijn**
     - **Geen montage**
     - Minimaal **300GB**
-    - Mocht er een paar minuten missen van het beeld, dan beschouwen wij dat als verdacht, en kan de aankoop niet doorgaan
+    - Mocht er een paar minuten missen van het beeld, dan beschouwen wij dat als verdacht, en kan de aankoop niet doorgaan.
 
     Ons team zal elke video twee keer bekijken om er zeker van te zijn dat u niet fraudeert. Hartelijk dank voor uw aandacht, en veel succes met uw video!
     """)
 
-    st.subheader("Na goedkeuring")
-    st.write("Als uw video wordt goedgekeurd, beloven wij **zo langzaam mogelijk** niets toe te sturen. Wij streven ernaar dit binnen een redelijke termijn te doen. Maar zoals u van ons gewend bent, kan dat even duren. Als uw ongeduld te groot wordt, en u stelt allerlei vragen, dan wordt u beslist en definitief overgelagen.")
+    st.divider()
 
+    # --- NIEUWE SECTIE: DE FILOSOFISCHE ONDERBOUWING ---
+    st.subheader("De Kunst van het Niets: Ontspullen als daad van vrijheid")
+    
+    st.write("""
+    Ontspullen is vaak een strijd tegen spullen die we 'ooit nog nodig hebben' of 'waar we aan gehecht zijn'. 
+    Maar wat als we het eens van de andere kant bekijken? Wat als we erkennen dat al deze objecten geen inherente waarde hebben? 
+    Dat is waar de nihilistische benadering om de hoek komt kijken.
+    """)
+
+    # Foto 2 (De berg met het rode kruis)
+    # Let op: vervang 'foto2_berg.jpg' door de daadwerkelijke bestandsnaam van je afbeelding
+    st.image("foto2_berg.jpg", caption="De Illusie van Waarde", use_container_width=True)
+    
+    st.markdown("""
+    **De Illusie van Waarde (Stap 1)**
+    Kijk naar deze berg. Al deze flessen, kokers en prullaria. We hebben ze verzameld omdat we dachten dat ze ons iets zouden brengen: gemak, status, of gewoon een gevulde kast. Maar existentieel gezien is het gewoon... *materie*. Het is een illusie dat deze objecten een diepere betekenis of een doel hebben. Ze nemen ruimte in, ze nemen rust in je hoofd weg, maar ze betekenen uiteindelijk niets. Het rode kruis is de eerste stap: de erkenning dat deze stapel geen waarde heeft.
+    """)
+
+    # Foto 1 (De vuilniszak met de OK-hand)
+    # Let op: vervang 'foto1_vuilniszak.jpg' door de daadwerkelijke bestandsnaam van je afbeelding
+    st.image("foto1_vuilniszak.jpg", caption="De Bevrijding van het Niets", use_container_width=True)
+    
+    st.markdown("""
+    **De Bevrijding van het Niets (Stap 2)**
+    Als we eenmaal accepteren dat spullen geen inherente betekenis hebben, volgt er een enorme bevrijding. Je hoeft niet meer bang te zijn om iets weg te gooien, want je verliest niets dat er echt toe doet. Wat overblijft is een lege ruimte. En die leegte is niet eng; het is de plek waar je zelf weer de regie hebt. Weg met de ballast, op naar de heldere leegte. Niets is oké.
+    """)
+
+    st.markdown("""
+    **De Sluier van de Materie (De Climax)**
+    Maar het gaat verder dan alleen een lege kast. Als je de materie als nihilistisch en zinloos beschouwt, ontstaat er pas echt ruimte in de geest om de ware zingeving van het leven te zien. 
+
+    Het rad dat we voor onze ogen draaien door onszelf met gehechtheid, mogelijke historische toepassingen en allerhande prullaria te omringen, werkt als een sluier voor je eigen innerlijke waarheid. 
+
+    Die waarheid is dat jij genoeg bent. Je hebt geen verzameling andermans spullen nodig om jezelf te bewijzen. Je bent veel meer mogelijkheden tot ontplooiing, mits je je toespitst op de creatie van je eigen leven, in plaats van je onbewuste verlangens te vullen met de creaties van anderen.
+
+    *(Een waarheid als een koe, die je even back down to earth brengt. Want daar zit 'm nou net de crux: de spullen zijn leeg, jij bent vol.)*
+    """)
+
+    st.divider()
+
+    # --- BESTAANDE SECTIE: NA GOEDKEURING ---
+    st.subheader("Na goedkeuring")
+    st.write("""
+    Als uw video wordt goedgekeurd, beloven wij **zo langzaam mogelijk** niets toe te sturen. 
+    Wij streven ernaar dit binnen een redelijke termijn te doen. Maar zoals u van ons gewend bent, kan dat even duren. 
+    Als uw ongeduld te groot wordt, en u stelt allerlei vragen, dan wordt u beslist en definitief overgeslagen.
+    """)
 # ============================================================
 # TAB 7: BLIND KOPEN
 # ============================================================
