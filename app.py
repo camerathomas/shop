@@ -333,39 +333,39 @@ with tab_innovatie:
 
     st.info("Let op: dit buizensysteem is nog in ontwikkeling. De verwachte opleverdatum is het jaar 3000. Tot die tijd blijven wij uw bestellingen op de oude, vertrouwde manier niet leveren.")
 
-st.markdown("---")
-st.subheader("⏳ Gisteren bestellen, en onbezorgd blijven")
+    st.markdown("---")
+    st.subheader("⏳ Gisteren bestellen, en onbezorgd blijven")
 
-st.write("""
-Momenteel voeren we een poll uit met een nieuw systeem om gisteren al te kunnen bestellen. 
-Deze geavanceerde techniek houdt in dat u gisteren een bestelling had kunnen doen, die automatisch 
-verwerkt wordt tot een order. Deze orders worden dan geplaatst tussen de orders van morgen en die 
-van eergisteren. En de orders van vandaag verplaatsen we dan ook naar gisteren. Op die manier is 
-gisteren vandaag geworden.
+    st.write("""
+    Momenteel voeren we een poll uit met een nieuw systeem om gisteren al te kunnen bestellen. 
+    Deze geavanceerde techniek houdt in dat u gisteren een bestelling had kunnen doen, die automatisch 
+    verwerkt wordt tot een order. Deze orders worden dan geplaatst tussen de orders van morgen en die 
+    van eergisteren. En de orders van vandaag verplaatsen we dan ook naar gisteren. Op die manier is 
+    gisteren vandaag geworden.
 
-Juridisch gezien is dat beter en ook voor de klant geeft het meer transparantie, doorzichtelijkheid 
-en helderheid omtrent de status 'onbezorgd' zijn. Maakt u dus geen zorgen! Wij denken overal aan.
+    Juridisch gezien is dat beter en ook voor de klant geeft het meer transparantie, doorzichtelijkheid 
+    en helderheid omtrent de status 'onbezorgd' zijn. Maakt u dus geen zorgen! Wij denken overal aan.
 
-Maar nu is aan u de vraag: bent u voor of tegen? Stemt u ook even mee? U bent waarschijnlijk de eerste!
-""")
+    Maar nu is aan u de vraag: bent u voor of tegen? Stemt u ook even mee? U bent waarschijnlijk de eerste!
+    """)
 
-# Poll
-if "poll_stem" not in st.session_state:
-    st.session_state.poll_stem = None
+    # Poll logica
+    if "poll_stem" not in st.session_state:
+        st.session_state.poll_stem = None
 
-keuze = st.radio(
-    "Bent u voor of tegen het nieuwe 'gisteren bestellen'-systeem?",
-    ["Voor", "Tegen", "Onthouding"],
-    key="poll_keuze"
-)
-
-if st.button("Stem", key="poll_stem_knop"):
-    st.session_state.poll_stem = keuze
-    st.success(
-        f"U hebt gestemd: **{keuze}**. Bedankt voor uw stem! "
-        f"U bent de eerste stemmer. En waarschijnlijk ook de laatste. "
-        f"Wij zullen uw stem meenemen in onze overwegingen, die wij gisteren al hebben afgerond."
+    keuze = st.radio(
+        "Bent u voor of tegen het nieuwe 'gisteren bestellen'-systeem?",
+        ["Voor", "Tegen", "Onthouding"],
+        key="poll_keuze"
     )
+
+    if st.button("Stem", key="poll_stem_knop"):
+        st.session_state.poll_stem = keuze
+        st.success(
+            f"U hebt gestemd: **{keuze}**. Bedankt voor uw stem! "
+            f"U bent de eerste stemmer. En waarschijnlijk ook de laatste. "
+            f"Wij zullen uw stem meenemen in onze overwegingen, die wij gisteren al hebben afgerond."
+        )
 # ============================================================
 # TAB 4: VACATURES
 # ============================================================
