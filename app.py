@@ -735,3 +735,13 @@ Als u op deze knop drukt, komt u in contact met filosofen uit de antieke tijd to
 **Maar let op:** u gaat dan serieus terug de wereld in geslingerd worden, om het rustig vanuit uw eigen nulpuntenergie te bekijken. En dat kan heel verhelderend zijn.
 """)
 st.link_button("Bezoek de Denkkrant", "https://denkkrant.streamlit.app/")
+
+st.markdown("---")
+st.subheader("🚪 praten met een filosoof-coach?")
+st.write("""
+Heeft u behoefte aan geestelijke ondersteuning? Of wilt u gezellig met een filosoof praten over het Niets, dan kunt u deze weg volgen:
+
+**Edoch, vergewis u ervan dat hun vragen scherp kunnen zijn!
+""")
+st.link_button("Bezoek de Coach Aurelius", "https://coachaurelius.streamlit.app/")
+
