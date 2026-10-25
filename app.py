@@ -721,3 +721,17 @@ with tab_faq:
 
     st.divider()
     st.caption("*Nog steeds vragen? Dat is heel normaal. Adem drie keer diep in en uit. De vragen zullen vanzelf verdwijnen. Net als alles.*")
+
+import streamlit as st
+
+# ... (je andere code) ...
+
+st.markdown("---")
+st.subheader("🚪 Ontsnappen?")
+st.write("""
+We begrijpen dat u zo snel mogelijk weg wilt van deze site. Dat kan. 
+Als u op deze knop drukt, komt u in contact met filosofen uit de antieke tijd tot de 20e eeuw. 
+
+**Maar let op:** u gaat dan serieus terug de wereld in geslingerd worden, om het rustig vanuit uw eigen nulpuntenergie te bekijken. En dat kan heel verhelderend zijn.
+""")
+st.link_button("Bezoek de Denkkrant", "https://denkkrant.streamlit.app/")
