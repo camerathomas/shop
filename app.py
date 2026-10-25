@@ -595,7 +595,7 @@ with tab_retour:
     
     # De foto 'onbezorgd.jpg' uit de static map
     st.image("static/onbezorgd.jpg", use_container_width=True)
-    st.caption("*Onbezorgdheid. Of gewoon een lege kamer. Het is maar net hoe je het bekijkt.*")
+    st.caption("*Onbezorgdheid in zijn meest rauwe, of beter gezegd pure vorm.*")
 
     st.write("""
     Alles van waarde gaat op zijn retour. Het is weerloos tegen de confrontatie met de elementen. Het niets echter ondervindt daar geen hinder van. Het is alles of niets, hoort u soms wel eens mensen zeggen. Aangezien alles teveel is, en op zijn retour, kunt u daarom beter kiezen voor niets. Haal niets in huis, en er ontstaat onbezorgdheid, rust en vrede. 
@@ -622,3 +622,51 @@ with tab_nieuwsbrief:
 
 st.markdown("---")
 st.caption(f"Totaal aantal producten: {len(producten['producten'])} · Allemaal even afwezig.")
+
+# ============================================================
+# TAB X: FAQ
+# ============================================================
+with tab_faq:
+    st.header("❓ Veelgestelde Vragen")
+    
+    st.write("Wij begrijpen dat u vragen hebt. Vragen zijn immers een teken dat u nog gehecht bent aan het aardse. Hieronder vindt u de antwoorden die u eigenlijk al wist, maar nog niet durfde te accepteren.")
+
+    st.markdown("---")
+    
+    # Jouw originele tekst, iets netter opgemaakt voor de leesbaarheid
+    st.markdown("""
+    **Vraag: Krijg ik iets thuisgestuurd?**  
+    *Antwoord: Nee.*
+
+    **Vraag: Kan ik mijn geld terugkrijgen?**  
+    *Antwoord: Nee.*
+
+    **Vraag: Waarom niet?**  
+    *Antwoord: Omdat u niets hebt gekocht.*
+
+    **Vraag: Maar ik heb betaald!**  
+    *Antwoord: Klopt. Bedankt voor uw betaling.*
+    """)
+    
+    st.markdown("---")
+
+    # Een paar extra vragen om de vibe compleet te maken
+    st.markdown("""
+    **Vraag: Wat is de levertijd van het Niets?**  
+    *Antwoord: Het Niets is er al. U hoeft alleen nog maar te stoppen met zoeken.*
+
+    **Vraag: Is er een garantie op Niets?**  
+    *Antwoord: Niets gaat eeuwig mee. Dus in feite ja. Maar als u een klacht heeft, lost de tijd dat vanzelf op.*
+
+    **Vraag: Mijn pakketje is zoekgeraakt in de post. Wat nu?**  
+    *Antwoord: Dat is het lot. En eigenlijk is het ook een prachtige metafoor. Laat het los.*
+
+    **Vraag: Kan ik contact opnemen met de klantenservice?**  
+    *Antwoord: U kunt ons altijd bellen. We nemen alleen nooit op. Dat is onderdeel van de ervaring.*
+
+    **Vraag: Ik voel me leeg na mijn aankoop.**  
+    *Antwoord: Gefeliciteerd. U bent eindelijk op de juiste plek. Die leegte is precies wat u zocht, ook al realiseerde u zich dat nog niet.*
+    """)
+
+    st.divider()
+    st.caption("*Nog steeds vragen? Dat is heel normaal. Adem drie keer diep in en uit. De vragen zullen vanzelf verdwijnen. Net als alles.*")
