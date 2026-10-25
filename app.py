@@ -31,7 +31,8 @@ tab_winkel, tab_afrekenen, tab_bestellingen, tab_over, tab_innovatie, tab_vacatu
     "🗑️ Ontspullen",
     "🕶️ Blind kopen",
     "🔄 Retourneren",
-    "📧 Nieuwsbrief"
+    "📧 Nieuwsbrief",
+    "❓ Faq"
 ])
 
 # ============================================================
