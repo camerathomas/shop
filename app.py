@@ -283,10 +283,10 @@ with tab_over:
     Wij stellen ons niet voor. Eigenlijk stellen wij zelfs niets voor.
 
     **Wat doen wij?**
-    Wij laten u in de waan dat u iets koopt. En hoe weten wij als geen ander hoe lekker, veilig en cozy die waan kan zijn. Heerlijk lekker even nergens aan denken. Wie wilt dat nou niet? Niemand dus. Je weet dat het waan is, maar toch is het even lekker om je erin te wentelen. Daar zorgen wij dag en nacht voor. Wij staan met onns hele team 24/7 paraat om u te dienen. 
+    Wij laten u in de waan dat u iets koopt. En hoe weten wij als geen ander hoe lekker, veilig en cozy die waan kan zijn. Heerlijk lekker even nergens aan denken. Wie wilt dat nou niet? Niemand dus. Je weet dat het waan is, maar toch is het even lekker om je erin te wentelen. Daar zorgen wij dag en nacht voor. Wij staan met ons hele team 24/7 paraat om u te dienen. 
 
     **Waarom?**
-    Omdat u zonder die waan misschien wel zou beseffen dat u niets nodig hebt. En dat kunnen wij niet hebben. De waan is zacht en de waarheid hard en soms stekelig. Dat is niets voor u! En in dit geval: Wij bieden u dat Niets, waar u zo naar verlangt. Want het Niets schept ruimte voor mooie nieuwe toekomstpersectieven, en die willen we allemaal wel!
+    Omdat u zonder die waan misschien wel zou beseffen dat u niets nodig hebt. En dat kunnen wij niet hebben. De waan is zacht en de waarheid hard en soms stekelig. Dat is niets voor u! En in dit geval: Wij bieden u dat Niets, waar u zo naar verlangt. Want het Niets schept ruimte voor mooie nieuwe toekomstperspectieven, en die willen we allemaal wel!
 
     **Waarom wij?**
     Omdat u alles al hebt. En omdat wij het enige schenken, weliswaar tegen een kleine vergoeding, dat u nog niet hebt: niets. Wist u dat het middelpunt van alles eigenlijk niets is? Stelt u zich voor dat u een kleine portie van dat niets kunt bemachtigen! Dan bent u ineens het middelpunt waar alles om draait. Waarom wij dat voor u willen bereiken? Wij hebben van onze hobby ons beroep gemaakt. Het voelt helemaal niet als werken. En dat is het ook niet.  
