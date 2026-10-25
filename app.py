@@ -575,9 +575,7 @@ with tab_blind:
 # ============================================================
 # TAB 8: RETOURNEREN
 # ============================================================
-# ============================================================
-# TAB X: RETOURNEREN
-# ============================================================
+
 with tab_retour:
     st.header("🔄 Retourneren")
     
@@ -628,7 +626,7 @@ with tab_nieuwsbrief:
     """)
 
     # De blanco afbeelding
-    st.image("static/nieuwsbrief_leeg.jpg", use_container_width=True)
+    st.image("static/nieuwsbrief.jpg", use_container_width=True)
     st.caption("*De inhoud van onze nieuwsbrief. Zoals u ziet, is de kwaliteit ongeëvenaard.*")
 
     st.write("""
