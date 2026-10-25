@@ -443,7 +443,7 @@ with tab_franchise:
 with tab_ontspullen:
     st.header("🗑️ Ontspullen")
     st.write("""
-    Vergeet niet: als u nu iets hebt gekocht, moet u eerst iets wegdoen in huis. Want anders past uw aankoop er niet bij. En het staat in onze algemene voorwaarden. We moeten dit streng controleren en handhaven, anders komt er nooit wat van terecht. We behandelen daaro iedere klant als een fraudeur in de dop. Om te bewijzen dat u geen fraudeur bent, en daadwerkelijk aan de voorwaarde vodoet om niets te ontvangen, vragen wij u het volgende: 
+    Vergeet niet: als u nu iets hebt gekocht, moet u eerst iets wegdoen in huis. Want anders past uw aankoop er niet bij. En het staat in onze algemene voorwaarden. We moeten dit streng controleren en handhaven, anders komt er nooit wat van terecht. We behandelen daarom iedere klant als een fraudeur in de dop. Om te bewijzen dat u eventueel geen fraudeur bent, en daadwerkelijk aan de voorwaarde vodoet om niets te ontvangen, vragen wij u het volgende: 
 
     1. Upload een video van iets wat u daadwerkelijk uit huis gooit, 
     2. Stop het weggeooide spul in een gesloten vuilniszak, 
@@ -452,14 +452,16 @@ with tab_ontspullen:
     5. Laat een tijdcode meelopen in het beeld.
     6. Zet de camera niet te dicht naast de aggrgaat (het geluid wordt niet gebruikt maar een aggrgaat overstemt alle gesprekken die u in huis voert, en soms is het wel graig om even mee te luisteren).
     7. Zeg tegen uw huisgeoten om niet ontbloot voor de camera langs te lopen, want dat zien we als een afleidingsmanouvre, waardoor u sowieso al niet aan de voorwaarden voldoet om de aankoop door te laten gaan.
-    8. Wees er zeker van dat er geen honden tegen de vuilnisak aan plassen. Dit is verder geen voorwaarde met consekwenties, maar meer een tip onzerzijds naar uw kant.   
+    8. Wees er zeker van dat er geen honden tegen de vuilnisak aan plassen. Dit is verder geen voorwaarde met consekwenties, maar meer een tip onzerzijds naar uw kant. 
+    9. Op het moment dat de vuilnisman of vuilnisvrouw uw zak pakt, let er dan goed om om alle handelingen close-up in beeld te houden, en het dienstdoende personeel goed te volgen in al hun handelingen, totdat de zak in de vuilnisauto verdwijnt.
+    10. Houdt de vuilniszak duidelijk zichtbaar in beeld, en zorg dat u in focus blijft, want alle onscherpe beelden moeten we helaas afkeuren. U zult dan niets ontvangen, terwijl u er wel voor hebt betaald. 
 
     **Onze regels:**
     - Video van ten minste **72 uur** in HD
     - Beschrijving van elke gebeurtenis in **foutloos Latijn**
     - **Geen montage**
     - Minimaal **300GB**
-    - Mocht er een paar minuten missen van het beeld, dan beschouwen wij dat als verdacht, en kan de aankoo niet doorgaan
+    - Mocht er een paar minuten missen van het beeld, dan beschouwen wij dat als verdacht, en kan de aankoop niet doorgaan
 
     Ons team zal elke video twee keer bekijken om er zeker van te zijn dat u niet fraudeert. Hartelijk dank voor uw aandacht, en veel succes met uw video!
     """)
@@ -475,11 +477,11 @@ with tab_blind:
     st.write("""
     U krijgt geen productbeschrijving. Geen foto. Geen idee. Want u krijgt exact wat u wilt: niets.
 
-    Vanaf vorig jaar boden wij een extra dienst aan waarover we nog geen enkele klant hebben ingelicht: **blind kopen!**
+    Vanaf vorig jaar boden wij een extra dienst aan waarover we nog geen enkele klant hebben ingelicht: **blind kopen!** En ik hoor u nu al denken: Wauw, daar heb ik al jaren op gewacht! Maar daar gaat het niet om. Belangrijk is ook hoe dit concept is ontwikkeld.
 
     Via een betrouwbare uitpakker van vrachtwagens op parkeerplaatsen hebben wij beslag weten te leggen op een grote partij ontlede ledigheid, en daar kunt u de vruchten van plukken. Vanwege het iets hogere risico zijn deze producten wel iets duurder, maar daar krijgt u dan ook echt helemaal **Niets** voor.
 
-    En Niets hebben we deze keer Niet voor NIets met een hoofdletter geschreven! Tel uit onze winst en uw veel lichtere portemonnee.
+    En Niets hebben we deze keer Niet voor NIets met een hoofdletter geschreven! Tel uit onze winst en uw veel lichtere portemonnee. 
     """)
 
     st.subheader("Waarom Niets met een hoofdletter?")
@@ -495,6 +497,8 @@ with tab_retour:
     st.write("Mocht u toch iets willen retourneren, dan geven wij hierbij **niet** ons adres. Zet linksboven in de hoek **niet** ter attentie van wie u het wilt sturen.")
 
     st.write("Ons team bepaalt zelf of het retourpakket iets is waar ze iets mee moeten, maar waarschijnlijk hoort u nooit meer van ons.")
+
+    st.write("Sinds volgend jaar november lanceren we een nieuw hulmiddel: retourneren voordat het is verzonden. En het mooie is: u hoeft u geld niet terug te krijgen. Zo kunnen we onze uitgebreide klantenkring bedienen met een heuse retour ervaring. En in dit geval hoeven niet alleen wij niets te doen, ook u hoeft niets te doen! Gedeelde smart is dubbele vreugd! Zo doen wij dat hier.")
 
 # ============================================================
 # TAB 9: NIEUWSBRIEF
