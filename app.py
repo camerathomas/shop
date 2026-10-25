@@ -480,7 +480,7 @@ with tab_ontspullen:
 
     # Foto 2 (De berg met het rode kruis)
     # Let op: vervang 'foto2_berg.jpg' door de daadwerkelijke bestandsnaam van je afbeelding
-    st.image("rommel.jpg", caption="De Illusie van Waarde", use_container_width=True)
+    st.image("static/rommel.jpg", caption="De Illusie van Waarde", use_container_width=True)
     
     st.markdown("""
     **De Illusie van Waarde (Stap 1)**
@@ -489,7 +489,7 @@ with tab_ontspullen:
 
     # Foto 1 (De vuilniszak met de OK-hand)
     # Let op: vervang 'foto1_vuilniszak.jpg' door de daadwerkelijke bestandsnaam van je afbeelding
-    st.image("goedevuilniszak.jpg", caption="De Bevrijding van het Niets", use_container_width=True)
+    st.image("static/goedevuilniszak.jpg", caption="De Bevrijding van het Niets", use_container_width=True)
     
     st.markdown("""
     **De Bevrijding van het Niets (Stap 2)**
