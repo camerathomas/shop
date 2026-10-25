@@ -174,82 +174,83 @@ with tab_afrekenen:
 
         st.markdown("---")
 
-if st.button("Afrekenen", type="primary"):
-    verhalen = []
+        # ✅ DEZE REGEL MOET INSPRINGEN (4 spaties)
+        if st.button("Afrekenen", type="primary"):
+            verhalen = []
 
-    for item in st.session_state.winkelwagen:
-        keuzes = item["keuzes"]
-        verhaal = []
+            for item in st.session_state.winkelwagen:
+                keuzes = item["keuzes"]
+                verhaal = []
 
-        # Type
-        if keuzes.get("type") == "Met uitklaphengsel en wieletjes":
-            verhaal.append("U koos voor een uniek uitklaphengsel met vier degelijke, onverwoestbare wieletjes.")
-        elif keuzes.get("type") == "Zelf dragen":
-            verhaal.append("U koos voor zelf dragen—dapper, want er is niets om te dragen.")
+                # Type
+                if keuzes.get("type") == "Met uitklaphengsel en wieletjes":
+                    verhaal.append("U koos voor een uniek uitklaphengsel met vier degelijke, onverwoestbare wieletjes.")
+                elif keuzes.get("type") == "Zelf dragen":
+                    verhaal.append("U koos voor zelf dragen—dapper, want er is niets om te dragen.")
 
-        # Kleur
-        if keuzes.get("kleur") == "Blauw":
-            verhaal.append("U koos voor blauw, een rustige kleur die helaas niet op voorraad is.")
-        elif keuzes.get("kleur") == "Groen":
-            verhaal.append("U koos voor groen, een milieuvriendelijke kleur die wij niet hebben.")
-        elif keuzes.get("kleur") == "Rood":
-            verhaal.append("U koos voor rood, de kleur van gevaar. Wij hebben besloten uw keuze te negeren.")
+                # Kleur
+                if keuzes.get("kleur") == "Blauw":
+                    verhaal.append("U koos voor blauw, een rustige kleur die helaas niet op voorraad is.")
+                elif keuzes.get("kleur") == "Groen":
+                    verhaal.append("U koos voor groen, een milieuvriendelijke kleur die wij niet hebben.")
+                elif keuzes.get("kleur") == "Rood":
+                    verhaal.append("U koos voor rood, de kleur van gevaar. Wij hebben besloten uw keuze te negeren.")
 
-        # Materiaal
-        if keuzes.get("materiaal") == "Gietbeton":
-            verhaal.append("Wij zullen eerst een mal timmeren om dit gevaarte in gietbeton te kunnen vervaardigen.")
-        elif keuzes.get("materiaal") == "Tweedehands WC-papier (klimaatvriendelijk)":
-            verhaal.append("U koos voor tweedehands WC-papier, klimaatvriendelijk en bijzonder moeilijk te vinden. Wij hebben het dan ook niet.")
-        elif keuzes.get("materiaal") == "Steen":
-            verhaal.append("U koos voor steen. Wij hebben geen steen. Wij hebben niets.")
-        elif keuzes.get("materiaal") == "Hout":
-            verhaal.append("U koos voor hout. Wij hebben geen hout, maar wij zullen uw keuze respecteren door u niets van hout te sturen.")
-        elif keuzes.get("materiaal") == "Plastic":
-            verhaal.append("U koos voor plastic. Dat is slecht voor het milieu, dus wij sturen u niets. Dat is beter voor het milieu.")
-        elif keuzes.get("materiaal") == "IJzer":
-            verhaal.append("U koos voor ijzer. Wij hebben geen ijzer, maar wij zullen uw bestelling extra stevig niet verpakken.")
+                # Materiaal
+                if keuzes.get("materiaal") == "Gietbeton":
+                    verhaal.append("Wij zullen eerst een mal timmeren om dit gevaarte in gietbeton te kunnen vervaardigen.")
+                elif keuzes.get("materiaal") == "Tweedehands WC-papier (klimaatvriendelijk)":
+                    verhaal.append("U koos voor tweedehands WC-papier, klimaatvriendelijk en bijzonder moeilijk te vinden. Wij hebben het dan ook niet.")
+                elif keuzes.get("materiaal") == "Steen":
+                    verhaal.append("U koos voor steen. Wij hebben geen steen. Wij hebben niets.")
+                elif keuzes.get("materiaal") == "Hout":
+                    verhaal.append("U koos voor hout. Wij hebben geen hout, maar wij zullen uw keuze respecteren door u niets van hout te sturen.")
+                elif keuzes.get("materiaal") == "Plastic":
+                    verhaal.append("U koos voor plastic. Dat is slecht voor het milieu, dus wij sturen u niets. Dat is beter voor het milieu.")
+                elif keuzes.get("materiaal") == "IJzer":
+                    verhaal.append("U koos voor ijzer. Wij hebben geen ijzer, maar wij zullen uw bestelling extra stevig niet verpakken.")
 
-        # Inpakken
-        if keuzes.get("inpakken") == "Nee":
-            verhaal.append("Het scheelt enorm dat we het niet in hoeven te pakken.")
-        elif keuzes.get("inpakken") == "Ja":
-            verhaal.append("Wij zullen uw niets zorgvuldig inpakken in niets, voorzien van een nietszeggend label.")
+                # Inpakken
+                if keuzes.get("inpakken") == "Nee":
+                    verhaal.append("Het scheelt enorm dat we het niet in hoeven te pakken.")
+                elif keuzes.get("inpakken") == "Ja":
+                    verhaal.append("Wij zullen uw niets zorgvuldig inpakken in niets, voorzien van een nietszeggend label.")
 
-        # Openbare weg
-        if keuzes.get("openbare_weg") == "Ja":
-            verhaal.append("Omdat u er de openbare weg mee op wilt, zullen we een extra lange levertermijn in acht nemen, om de veiligheid van u en uw omgeving te waarborgen.")
+                # Openbare weg
+                if keuzes.get("openbare_weg") == "Ja":
+                    verhaal.append("Omdat u er de openbare weg mee op wilt, zullen we een extra lange levertermijn in acht nemen, om de veiligheid van u en uw omgeving te waarborgen.")
 
-        # Rijbewijs
-        if keuzes.get("rijbewijs") == "Nee":
-            verhaal.append("Dat u geen rijbewijs heeft, doet niet ter zake.")
-        elif keuzes.get("rijbewijs") == "Ja":
-            verhaal.append("Uw rijbewijs is helaas niet geldig voor onze winkelwagens, want die bestaan niet.")
+                # Rijbewijs
+                if keuzes.get("rijbewijs") == "Nee":
+                    verhaal.append("Dat u geen rijbewijs heeft, doet niet ter zake.")
+                elif keuzes.get("rijbewijs") == "Ja":
+                    verhaal.append("Uw rijbewijs is helaas niet geldig voor onze winkelwagens, want die bestaan niet.")
 
-        verhalen.append(" ".join(verhaal))
+                verhalen.append(" ".join(verhaal))
 
-    # ✅ Algemene afsluiting (buiten de loop, één keer)
-    afsluiting = (
-        "Op dit moment hebben wij echter alleen neongele opvouwbare winkelwagens van gerecycled WC-papier, "
-        "vooral om de stikstofcrisis niet negatief te beïnvloeden. In dat kader zullen we daarom uw bestelling "
-        "persoonlijk naar u toe komen duwen, en dat kan even duren, want de fabrikant zit op een van de 17.000 eilanden in Indonesië, "
-        "en wij weten nog niet welke."
-    )
+            # Algemene afsluiting
+            afsluiting = (
+                "Op dit moment hebben wij echter alleen neongele opvouwbare winkelwagens van gerecycled WC-papier, "
+                "vooral om de stikstofcrisis niet negatief te beïnvloeden. In dat kader zullen we daarom uw bestelling "
+                "persoonlijk naar u toe komen duwen, en dat kan even duren, want de fabrikant zit op een van de 17.000 eilanden in Indonesië, "
+                "en wij weten nog niet welke."
+            )
 
-    # Sla de bestelling op
-    st.session_state.bestellingen.append({
-        "producten": [item["product"] for item in st.session_state.winkelwagen],
-        "totaal": sum(float(item["prijs"].replace("€", "").replace(",", ".").replace("/maand", "")) for item in st.session_state.winkelwagen),
-        "status": "Niet verzonden",
-        "verhalen": verhalen,
-        "afsluiting": afsluiting
-    })
-    st.session_state.winkelwagen = []
+            # Sla de bestelling op
+            st.session_state.bestellingen.append({
+                "producten": [item["product"] for item in st.session_state.winkelwagen],
+                "totaal": sum(float(item["prijs"].replace("€", "").replace(",", ".").replace("/maand", "")) for item in st.session_state.winkelwagen),
+                "status": "Niet verzonden",
+                "verhalen": verhalen,
+                "afsluiting": afsluiting
+            })
+            st.session_state.winkelwagen = []
 
-    # Toon de verhalen
-    st.success("Gefeliciteerd! U hebt afgerekend. Hier is het verhaal van uw bestelling:")
-    for v in verhalen:
-        st.info(v)
-    st.info(afsluiting)
+            # Toon de verhalen
+            st.success("Gefeliciteerd! U hebt afgerekend. Hier is het verhaal van uw bestelling:")
+            for v in verhalen:
+                st.info(v)
+            st.info(afsluiting)
 # ============================================================
 # TAB: MIJN WINKELWAGEN / BESTELLINGEN
 # ============================================================
