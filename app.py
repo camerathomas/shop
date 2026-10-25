@@ -353,6 +353,10 @@ with tab_innovatie:
     # Poll logica
     if "poll_stem" not in st.session_state:
         st.session_state.poll_stem = None
+    if "genegeerde_stemmen" not in st.session_state:
+        st.session_state.genegeerde_stemmen = 0
+    if "uitgebrachte_stemmen" not in st.session_state:
+        st.session_state.uitgebrachte_stemmen = 0
 
     keuze = st.radio(
         "Bent u voor of tegen het nieuwe 'gisteren bestellen'-systeem?",
@@ -362,11 +366,31 @@ with tab_innovatie:
 
     if st.button("Stem", key="poll_stem_knop"):
         st.session_state.poll_stem = keuze
+        st.session_state.uitgebrachte_stemmen += 1
+        
+        # Elke stem wordt genegeerd, dus de teller gaat omhoog
+        st.session_state.genegeerde_stemmen += 1
+        
         st.success(
             f"U hebt gestemd: **{keuze}**. Bedankt voor uw stem! "
             f"U bent de eerste stemmer. En waarschijnlijk ook de laatste. "
             f"Wij zullen uw stem meenemen in onze overwegingen, die wij gisteren al hebben afgerond."
         )
+
+    # Toon de statistieken
+    st.markdown("---")
+    st.subheader("📊 Poll resultaten")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric(label="Uitgebrachte stemmen", value=st.session_state.uitgebrachte_stemmen)
+    with col2:
+        st.metric(label="Genegeerde stemmen", value=st.session_state.genegeerde_stemmen)
+        
+    if st.session_state.uitgebrachte_stemmen > 0:
+        st.caption("100% van de stemmen is genegeerd. Dat noemen wij transparantie.")
+    else:
+        st.caption("Er zijn nog geen stemmen genegeerd. Wees de eerste!")
 # ============================================================
 # TAB 4: VACATURES
 # ============================================================
