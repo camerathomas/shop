@@ -621,6 +621,33 @@ with tab_nieuwsbrief:
     if st.button("Abonneer u op de nieuwsbrief"):
         st.success("Gefeliciteerd! U bent abonnee. U ontvangt niets. U kunt zich op elk moment afmelden, maar dat hoeft niet, want u ontvangt toch niets.")
 
+    st.write("""
+    Om teleurstellingen te voorkomen, en om u de kans te geven uw verwachtingspatroon te toetsen aan de realiteit, 
+    hebben wij hieronder een **exclusieve preview** van onze nieuwsbrief toegevoegd. 
+    Dit is exact wat u kunt verwachten.
+    """)
+
+    # De blanco afbeelding
+    st.image("static/nieuwsbrief_leeg.jpg", use_container_width=True)
+    st.caption("*De inhoud van onze nieuwsbrief. Zoals u ziet, is de kwaliteit ongeëvenaard.*")
+
+    st.write("""
+    **Voldoet dit aan uw verwachtingen?** 
+    - Ja? Dan kunt u zich hieronder inschrijven.
+    - Nee? Dan is dat een prachtige les in loslaten. U hoeft zich niet in te schrijven.
+    """)
+
+    st.divider()
+
+    # Een nep-inschrijfformulier voor de volledigheid
+    with st.form("nieuwsbrief_form"):
+        st.write("**Schrijf u in (of niet):**")
+        email = st.text_input("E-mailadres (optioneel, wij lezen het toch niet)")
+        submit = st.form_submit_button("Verstuur")
+        
+        if submit:
+            st.success("Bedankt voor uw inschrijving. Of niet. Het maakt ons niets uit. U zult niets ontvangen, maar dat wist u al.")
+
 st.markdown("---")
 st.caption(f"Totaal aantal producten: {len(producten['producten'])} · Allemaal even afwezig.")
 
