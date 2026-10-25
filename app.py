@@ -498,7 +498,7 @@ with tab_retour:
 
     st.write("Ons team bepaalt zelf of het retourpakket iets is waar ze iets mee moeten, maar waarschijnlijk hoort u nooit meer van ons.")
 
-    st.write("Sinds volgend jaar november lanceren we een nieuw hulmiddel: retourneren voordat het is verzonden. En het mooie is: u hoeft u geld niet terug te krijgen. Zo kunnen we onze uitgebreide klantenkring bedienen met een heuse retour ervaring. En in dit geval hoeven niet alleen wij niets te doen, ook u hoeft niets te doen! Gedeelde smart is dubbele vreugd! Zo doen wij dat hier.")
+    st.write("Sinds volgend jaar november lanceren we een nieuw hulpmiddel: retourneren voordat het is verzonden. En het mooie is: u hoeft u geld niet terug te krijgen. Zo kunnen we onze uitgebreide klantenkring bedienen met een heuse retour ervaring. En in dit geval hoeven niet alleen wij niets te doen, ook u hoeft niets te doen! Gedeelde smart is dubbele vreugd! Zo doen wij dat hier.")
 
 # ============================================================
 # TAB 9: NIEUWSBRIEF
