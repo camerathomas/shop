@@ -443,22 +443,29 @@ with tab_franchise:
 with tab_ontspullen:
     st.header("🗑️ Ontspullen")
     st.write("""
-    Vergeet niet: als u nu iets hebt gekocht, moet u eerst iets wegdoen in huis. Want anders past uw aankoop er niet bij.
+    Vergeet niet: als u nu iets hebt gekocht, moet u eerst iets wegdoen in huis. Want anders past uw aankoop er niet bij. En het staat in onze algemene voorwaarden. We moeten dit streng controleren en handhaven, anders komt er nooit wat van terecht. We behandelen daaro iedere klant als een fraudeur in de dop. Om te bewijzen dat u geen fraudeur bent, en daadwerkelijk aan de voorwaarde vodoet om niets te ontvangen, vragen wij u het volgende: 
 
-    Upload een video van iets wat u daadwerkelijk uit huis gooit, stop het in een gesloten vuilniszak, en laat de camera te allen tijde gericht op de vuilniszak totdat hij in de vuilnisauto verdwijnt.
+    1. Upload een video van iets wat u daadwerkelijk uit huis gooit, 
+    2. Stop het weggeooide spul in een gesloten vuilniszak, 
+    3. Laat de camera te allen tijde gericht op de vuilniszak totdat hij in de vuilnisauto verdwijnt.
+    4. Gebruik geen accu's maar stroom uit een stopcontact, of gebruik uw aggregaat.
+    5. Laat een tijdcode meelopen in het beeld.
+    6. Zet de camera niet te dicht naast de aggrgaat (het geluid wordt niet gebruikt maar een aggrgaat overstemt alle gesprekken die u in huis voert, en soms is het wel graig om even mee te luisteren).
+    7. Zeg tegen uw huisgeoten om niet ontbloot voor de camera langs te lopen, want dat zien we als een afleidingsmanouvre, waardoor u sowieso al niet aan de voorwaarden voldoet om de aankoop door te laten gaan.
+    8. Wees er zeker van dat er geen honden tegen de vuilnisak aan plassen. Dit is verder geen voorwaarde met consekwenties, maar meer een tip onzerzijds naar uw kant.   
 
     **Onze regels:**
     - Video van ten minste **72 uur** in HD
     - Beschrijving van elke gebeurtenis in **foutloos Latijn**
     - **Geen montage**
     - Minimaal **300GB**
-    - Mocht er een paar minuten missen van het beeld, dan beschouwen wij dat als verdacht
+    - Mocht er een paar minuten missen van het beeld, dan beschouwen wij dat als verdacht, en kan de aankoo niet doorgaan
 
     Ons team zal elke video twee keer bekijken om er zeker van te zijn dat u niet fraudeert. Hartelijk dank voor uw aandacht, en veel succes met uw video!
     """)
 
     st.subheader("Na goedkeuring")
-    st.write("Als uw video wordt goedgekeurd, beloven wij **zo langzaam mogelijk** niets toe te sturen. Wij streven ernaar dit binnen een redelijke termijn te doen. Maar zoals u van ons gewend bent, kan dat even duren.")
+    st.write("Als uw video wordt goedgekeurd, beloven wij **zo langzaam mogelijk** niets toe te sturen. Wij streven ernaar dit binnen een redelijke termijn te doen. Maar zoals u van ons gewend bent, kan dat even duren. Als uw ongeduld te groot wordt, en u stelt allerlei vragen, dan wordt u beslist en definitief overgelagen.")
 
 # ============================================================
 # TAB 7: BLIND KOPEN
