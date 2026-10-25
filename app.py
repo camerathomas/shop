@@ -286,7 +286,7 @@ with tab_over:
     Wij laten u in de waan dat u iets koopt. En hoe weten wij als geen ander hoe lekker, veilig en cozy die waan kan zijn. Heerlijk lekker even nergens aan denken. Wie wilt dat nou niet? Niemand dus. Je weet dat het waan is, maar toch is het even lekker om je erin te wentelen. Daar zorgen wij dag en nacht voor. Wij staan met onns hele team 24/7 paraat om u te dienen. 
 
     **Waarom?**
-    Omdat u zonder die waan misschien wel zou beseffen dat u niets nodig hebt. En dat kunnen wij niet hebben. De waan is zacht en de waarheid hard en soms stekelig. Dat is niets voor u! En in dit geval: Wij bieden u dat Niets, waar u zo naar verlangt. Want het Niets schet ruimte voor mooie nieuwe toekomstpersectieven, en die willen we allemaal!
+    Omdat u zonder die waan misschien wel zou beseffen dat u niets nodig hebt. En dat kunnen wij niet hebben. De waan is zacht en de waarheid hard en soms stekelig. Dat is niets voor u! En in dit geval: Wij bieden u dat Niets, waar u zo naar verlangt. Want het Niets schept ruimte voor mooie nieuwe toekomstpersectieven, en die willen we allemaal wel!
 
     **Waarom wij?**
     Omdat u alles al hebt. En omdat wij het enige schenken, weliswaar tegen een kleine vergoeding, dat u nog niet hebt: niets. Wist u dat het middelpunt van alles eigenlijk niets is? Stelt u zich voor dat u een kleine portie van dat niets kunt bemachtigen! Dan bent u ineens het middelpunt waar alles om draait. Waarom wij dat voor u willen bereiken? Wij hebben van onze hobby ons beroep gemaakt. Het voelt helemaal niet als werken. En dat is het ook niet.  
@@ -304,7 +304,7 @@ with tab_innovatie:
     st.write("""
     Heeft u ooit wel eens gehoord van een lege zak waar u niets in kan doen? Wij wel.
     
-    Onze productenlijn bezit expres geen handleiding, omdat ze allemaal intuïtief niet te bedienen zijn. R&D heeft letterlijk 40 jaar onderzoek gedaan naar hoe elk product geen handeiding behoeft. Ze kwamen er eigenlijk niet uit. Ze werden er hopeloos van. Het ziekteverzuim was in die tijd erg hoog, tegen de 100%. Soms zelfs daar een klein beetje overheen. Maar een net aangenomen stagaire die even tijdelijk in een inrichting was opgenomen na haar eerste werkdag, kwam met de briljante spontane uitspraak: Niets is leuk! En wij dachten gelijk: Gelijk heeft ze, niets is het allerleukst! En dat verkoopt nog niemand! Dus wij aan de slag, en we hebben haar uiteraard een leuk bedankkaartje gestuurd ook. Waarop ze uitschreeuwde: ik heb om niets gevraagd. En toen was de cirkel rond. Ee hebben haar niets gegeven, en eindelijk was ze tevreden! Dit was een keerpunt in ons denken. En wat we voor haar hebben gedaan willen we nu graag voor iedereen doen die het nodig heeft. Want: het kan gewoon wel! Niets is wel degelijk mogelijk!
+    Onze productenlijn bezit expres geen handleiding, omdat ze allemaal intuïtief niet te bedienen zijn. R&D heeft letterlijk 40 jaar onderzoek gedaan naar hoe elk product geen handleiding behoeft. Ze kwamen er eigenlijk niet uit. Ze werden er hopeloos van. Het ziekteverzuim was in die tijd erg hoog, tegen de 100%. Soms zelfs daar een klein beetje overheen. Maar een net aangenomen stagaire die even tijdelijk in een inrichting was opgenomen na haar eerste werkdag, kwam met de briljante spontane uitspraak: Niets is leuk! En wij dachten gelijk: Gelijk heeft ze, niets is het allerleukst! En dat verkoopt nog niemand! Dus wij aan de slag, en we hebben haar uiteraard een leuk bedankkaartje gestuurd ook. Waarop ze uitschreeuwde: ik heb om niets gevraagd. En toen was de cirkel rond. We hebben haar niets gegeven, en eindelijk was ze tevreden! Dit was een keerpunt in ons denken. En wat we voor haar hebben gedaan willen we nu graag voor iedereen doen die het nodig heeft. Want: Niets is mogelijk! Het kan gewoon wel! Niets is wel degelijk een zeer goede optie!
 
     Volgens onze omzetcijfers zit er een flinke stijging in het aantal klanten dat het liefste helemaal niets wil. En wij kunnen dat leveren! Wij zijn de eerste en enige, niet alleen in Nederland of Europa, nee wij leveren niets aan de hele wereld.
 
@@ -451,8 +451,8 @@ with tab_ontspullen:
     4. Gebruik geen accu's maar stroom uit een stopcontact, of gebruik uw aggregaat.
     5. Laat een tijdcode meelopen in het beeld.
     6. Zet de camera niet te dicht naast de aggrgaat (het geluid wordt niet gebruikt maar een aggrgaat overstemt alle gesprekken die u in huis voert, en soms is het wel graig om even mee te luisteren).
-    7. Zeg tegen uw huisgeoten om niet ontbloot voor de camera langs te lopen, want dat zien we als een afleidingsmanouvre, waardoor u sowieso al niet aan de voorwaarden voldoet om de aankoop door te laten gaan.
-    8. Wees er zeker van dat er geen honden tegen de vuilnisak aan plassen. Dit is verder geen voorwaarde met consekwenties, maar meer een tip onzerzijds naar uw kant. 
+    7. Zeg tegen uw huisgenoten om niet ontbloot voor de camera langs te lopen, want dat zien we als een afleidingsmanouvre, waardoor u sowieso al niet aan de voorwaarden voldoet om de aankoop door te laten gaan.
+    8. Wees er zeker van dat er geen honden tegen de vuilniszak aan plassen. Dit is verder geen voorwaarde met consekwenties, maar meer een tip onzerzijds naar uw kant. 
     9. Op het moment dat de vuilnisman of vuilnisvrouw uw zak pakt, let er dan goed om om alle handelingen close-up in beeld te houden, en het dienstdoende personeel goed te volgen in al hun handelingen, totdat de zak in de vuilnisauto verdwijnt.
     10. Houdt de vuilniszak duidelijk zichtbaar in beeld, en zorg dat u in focus blijft, want alle onscherpe beelden moeten we helaas afkeuren. U zult dan niets ontvangen, terwijl u er wel voor hebt betaald. 
 
@@ -510,7 +510,7 @@ with tab_nieuwsbrief:
 
     Abonneer dan nu gelijk op onze nieuwsbrief, en wij sturen u helemaal niets op, zelfs geen lege mail. Hoewel sommige lieden binnen ons bedrijf een lege mail veel correcter vinden, zullen we ons voorlopig behoeden om een vermoeiende nieuwsbrief neer te pennen.
 
-    En om het nou aan AI te vragen, dat is slecht voor het milieu. Dus nee: u krijgt geen nieuwsbrief, maar kunt zich er wel op abonneren.
+    En om het nou aan AI te vragen om een nieuwsbrief in elkaar te knippen en plakken? Dat is zo slecht voor het milieu. Dus nee: u krijgt geen nieuwsbrief, maar kunt zich er wel op abonneren.
     """)
 
     if st.button("Abonneer u op de nieuwsbrief"):
