@@ -282,18 +282,19 @@ with tab_over:
     Wij stellen ons niet voor. Eigenlijk stellen wij zelfs niets voor.
 
     **Wat doen wij?**
-    Wij laten u in de waan dat u iets koopt. En hoe weten wij als geen ander hoe lekker, veilig en cozy die waan kan zijn.
+    Wij laten u in de waan dat u iets koopt. En hoe weten wij als geen ander hoe lekker, veilig en cozy die waan kan zijn. Heerlijk lekker even nergens aan denken. Wie wilt dat nou niet? Niemand dus. Je weet dat het waan is, maar toch is het even lekker om je erin te wentelen. Daar zorgen wij dag en nacht voor. Wij staan met onns hele team 24/7 paraat om u te dienen. 
 
     **Waarom?**
-    Omdat u zonder die waan misschien wel zou beseffen dat u niets nodig hebt. En dat kunnen wij niet hebben.
+    Omdat u zonder die waan misschien wel zou beseffen dat u niets nodig hebt. En dat kunnen wij niet hebben. De waan is zacht en de waarheid hard en soms stekelig. Dat is niets voor u! En in dit geval: Wij bieden u dat Niets, waar u zo naar verlangt. Want het Niets schet ruimte voor mooie nieuwe toekomstpersectieven, en die willen we allemaal!
 
     **Waarom wij?**
-    Omdat u alles al hebt. En omdat wij het enige zijn dat u nog niet hebt: niets.
+    Omdat u alles al hebt. En omdat wij het enige schenken, weliswaar tegen een kleine vergoeding, dat u nog niet hebt: niets. Wist u dat het middelpunt van alles eigenlijk niets is? Stelt u zich voor dat u een kleine portie van dat niets kunt bemachtigen! Dan bent u ineens het middelpunt waar alles om draait. Waarom wij dat voor u willen bereiken? Wij hebben van onze hobby ons beroep gemaakt. Het voelt helemaal niet als werken. En dat is het ook niet.  
     """)
 
-# ============================================================
-# TAB 3: INNOVATIE
-# ============================================================
+    st.markdown("---")
+    st.subheader("Ons team")
+    st.image("static/teamfoto.jpg")
+    st.caption("*Wij stellen ons niet voor. Eigenlijk stellen wij zelfs niets voor. Maar we hebben wel een teamfoto. En daar zijn we trots op.*")
 # ============================================================
 # TAB 3: INNOVATIE
 # ============================================================
@@ -301,6 +302,8 @@ with tab_innovatie:
     st.header("💡 Innovatie")
     st.write("""
     Heeft u ooit wel eens gehoord van een lege zak waar u niets in kan doen? Wij wel.
+    
+    Onze productenlijn bezit expres geen handleiding, omdat ze allemaal intuïtief niet te bedienen zijn. R&D heeft letterlijk 40 jaar onderzoek gedaan naar hoe elk product geen handeiding behoeft. Ze kwamen er eigenlijk niet uit. Ze werden er hopeloos van. Het ziekteverzuim was in die tijd erg hoog, tegen de 100%. Soms zelfs daar een klein beetje overheen. Maar een net aangenomen stagaire die even tijdelijk in een inrichting was opgenomen na haar eerste werkdag, kwam met de briljante spontane uitspraak: Niets is leuk! En wij dachten gelijk: Gelijk heeft ze, niets is het allerleukst! En dat verkoopt nog niemand! Dus wij aan de slag, en we hebben haar uiteraard een leuk bedankkaartje gestuurd ook. Waarop ze uitschreeuwde: ik heb om niets gevraagd. En toen was de cirkel rond. Ee hebben haar niets gegeven, en eindelijk was ze tevreden! Dit was een keerpunt in ons denken. En wat we voor haar hebben gedaan willen we nu graag voor iedereen doen die het nodig heeft. Want: het kan gewoon wel! Niets is wel degelijk mogelijk!
 
     Volgens onze omzetcijfers zit er een flinke stijging in het aantal klanten dat het liefste helemaal niets wil. En wij kunnen dat leveren! Wij zijn de eerste en enige, niet alleen in Nederland of Europa, nee wij leveren niets aan de hele wereld.
 
