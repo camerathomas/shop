@@ -574,16 +574,36 @@ with tab_blind:
 # ============================================================
 # TAB 8: RETOURNEREN
 # ============================================================
+# ============================================================
+# TAB X: RETOURNEREN
+# ============================================================
 with tab_retour:
     st.header("🔄 Retourneren")
+    
     st.write("**Wij nemen geen retour in ontvangst, of u moet niets hebben geretourneerd.** In dat geval maken wij daar geen probleem van.")
 
     st.write("Mocht u toch iets willen retourneren, dan geven wij hierbij **niet** ons adres. Zet linksboven in de hoek **niet** ter attentie van wie u het wilt sturen.")
 
     st.write("Ons team bepaalt zelf of het retourpakket iets is waar ze iets mee moeten, maar waarschijnlijk hoort u nooit meer van ons.")
 
-    st.write("Sinds volgend jaar november lanceren we een nieuw hulpmiddel: retourneren voordat het is verzonden. En het mooie is: u hoeft u geld niet terug te krijgen. Zo kunnen we onze uitgebreide klantenkring bedienen met een heuse retour ervaring. En in dit geval hoeven niet alleen wij niets te doen, ook u hoeft niets te doen! Gedeelde smart is dubbele vreugd! Zo doen wij dat hier.")
+    st.write("Sinds volgend jaar november lanceren we een nieuw hulpmiddel: retourneren voordat het is verzonden. En het mooie is: u hoeft uw geld niet terug te krijgen. Zo kunnen we onze uitgebreide klantenkring bedienen met een heuse retour ervaring. En in dit geval hoeven niet alleen wij niets te doen, ook u hoeft niets te doen! Gedeelde smart is dubbele vreugd! Zo doen wij dat hier.")
 
+    st.divider()
+
+    # --- NIEUWE SECTIE: WORDT ONBEZORGD ---
+    st.subheader("Wordt onbezorgd!")
+    
+    # De foto 'onbezorgd.jpg' uit de static map
+    st.image("static/onbezorgd.jpg", use_container_width=True)
+    st.caption("*Onbezorgdheid. Of gewoon een lege kamer. Het is maar net hoe je het bekijkt.*")
+
+    st.write("""
+    Alles van waarde gaat op zijn retour. Het is weerloos tegen de confrontatie met de elementen. Het niets echter ondervindt daar geen hinder van. Het is alles of niets, hoort u soms wel eens mensen zeggen. Aangezien alles teveel is, en op zijn retour, kunt u daarom beter kiezen voor niets. Haal niets in huis, en er ontstaat onbezorgdheid, rust en vrede. 
+
+    Niets heeft een prijskaartje. Dat is logisch. U betaalt voor de ontwikkelkosten. Eerst was alles ingewikkeld, daarna hebben wij dat ont-wikkeld, tot het niets. Het klinkt zo eenvoudig. Echter, dat is geen simpel proces. Vroeger moesten mensen jaren in ascese om dit te bereiken, maar u kunt het onbereikbare nu niet in huis halen door gewoon af te rekenen, en alle procedures te ondergaan, die u vrijwaren van het label potentiële fraudeur. 
+
+    Maar dat zijn slechts een paar kleine hoepels waar u nog even als proestende zeehond doorheen moet springen. Daarna is het onbereikbare uw deel! Maar zelfs dan bieden wij u de vrijheid om niets te retourneren. De klant is koning!
+    """)
 # ============================================================
 # TAB 9: NIEUWSBRIEF
 # ============================================================
