@@ -297,6 +297,31 @@ with tab_over:
     st.subheader("Ons team")
     st.image("static/teamfoto.jpg")
     st.caption("*Wij stellen ons niet voor. Eigenlijk stellen wij zelfs niets voor. Maar we hebben wel een teamfoto. En daar zijn we trots op.*")
+
+    # ... (bestaande code van de Over Ons tab, inclusief de teamfoto) ...
+
+    st.markdown("---")
+    st.subheader("Onze helden (ofzo)")
+    st.write("*Wij stellen ons niet voor. Maar hier zijn ze dan toch. Onze medewerkers, die dag en nacht paraat staan om niets te doen.*")
+
+    # We maken 11 kolommen aan, 4 per rij
+    # We loopen door de 11 foto's heen
+    num_teamleden = 11
+    
+    # We maken rijen van 4
+    for i in range(0, num_teamleden, 4):
+        cols = st.columns(4)
+        for j in range(4):
+            idx = i + j
+            if idx < num_teamleden:
+                # Bepaal de bestandsnaam (team0.jpg, team1.jpg, etc.)
+                # Pas .jpg aan naar .png als je foto's een andere extensie hebben
+                foto_pad = f"static/team{idx}.jpg" 
+                
+                with cols[j]:
+                    st.image(foto_pad, use_container_width=True)
+                    # Optioneel: een klein bijschrift per foto
+                    # st.caption(f"Teamlid {idx}")
 # ============================================================
 # TAB 3: INNOVATIE
 # ============================================================
